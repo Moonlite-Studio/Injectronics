@@ -1,11 +1,15 @@
 <template name = "projectItem">
-  <div class = "project">
-    <div class="panel panel-default">
-      <h3 class="panel-title">Panel primary</h3>
-    </div>
-    <div class="panel-body">
-        <h4><a href="{{url}}"></a>{{title}}</h4>
-        <h5>Submitted by: {{author}}</h5>
-    </div>
-  </div>
+	<div class = "project">
+		<div class="panel panel-primary">
+			<div class="panel-heading">
+				<h3 class="panel-title">{{title}}</h3>
+			</div>
+			<div class="panel-body">
+				<span class= "descriptionText">Description: {{description}}</span>
+				<button type="button" class="btn btn-primary pull-right project-button">Enter Project</button>
+				<span class="authorText"><p>Submitted by: {{author}}</p></span>
+				
+			</div>
+		</div>
+	</div>
 </template>
