@@ -1,18 +1,22 @@
 <head>
-  <title>Concloud</title>
+	<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" rel="stylesheet">
+	<title>Concloud</title>
 </head>
 
 <body>
-	{{> header}}
-
-	<!--This will center all of our content-->
-	<div class = "container">
-   		{{renderPage}}
-	</div>
+	{{> concloud}}
 </body>
 
-<template name="hello">
-  <h1>Hello World!</h1>
-  {{greeting}}
-  <input type="button" value="Click" />
+<template name="concloud">
+	{{> header}}
+	<div class="main-container">
+		<div class="main-container-inner">
+			{{> menu}}
+			<div class="main-content" id="main-container">
+				{{renderPage}}
+			</div>
+		</div>
+	</div>
+	
+	
 </template>

@@ -1,1 +1,23 @@
 /* CSS declarations go here */
+
+.sidebar-collapse:before{
+	border-top: 0!important;
+}
+
+.page-content{
+	background-color:rgba(230,230,230,.6)!important;
+	height:100%;
+}
+
+html,body{
+	height:100%;
+}
+
+.main-container{
+	background-color:rgba(230,230,230,.6)!important;
+	height:100%;
+}
+
+.main-container:after {
+	background-color:transparent!important;
+}
