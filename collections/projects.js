@@ -26,16 +26,16 @@ Meteor.methods({
 		}
 
 		//filling in other keys
-		var proj = _.extend(_.pick(projectAttributes, 'url', 'title', 'description'), {
+		var proj = _.extend(_.pick(projectAttributes, 'title', 'description'), {
 			authorID: user._id,
-			author: author.username,
+			author: user._id, //create author!!
 			submitted: new Date().getTime(),
 			stakeholders: []
 			//NEED TO FILL IN DATA FOR HOLDING ACTUAL DOCUMENTS!!
 		});
 
 		//Inserts new project into collection
-		var projectID = Project.insert(proj);
+		var projectID = Projects.insert(proj);
 
 		//returns the ID of the new project
 		return projectID;
