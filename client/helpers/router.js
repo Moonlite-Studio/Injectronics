@@ -1,1 +1,3 @@
-//Enter Router Code
+Meteor.Router.add({
+	'/': "projectsList"
+});
