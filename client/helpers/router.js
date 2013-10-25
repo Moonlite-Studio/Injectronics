@@ -1,6 +1,8 @@
 Meteor.Router.add({
 	//Routes Home Page.  Change Later to Basic Dashboard
-	'/': "projectsList",
+	'/': "dashboard",
+
+	'/projects' : 'projectsList',
 	
 	//Routes to individual project pages
 	'/projects/:_id' : {

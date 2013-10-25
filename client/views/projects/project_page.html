@@ -1,5 +1,11 @@
 <template name="projectPage">
-	{{#with currentProject}}
-		{{> projectItem}}
-	{{/with}}
+	<div class = "project col-xs-12">
+		<div class="panel panel-default">
+			<div class="panel-body">
+				{{#with currentProject}}
+				{{> projectItem}}
+				{{/with}}
+			</div>
+		</div>
+	</div>
 </template>
