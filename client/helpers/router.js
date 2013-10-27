@@ -1,6 +1,10 @@
 Meteor.Router.add({
+
+	//Routes Signin Page.
+	'/': "splash",
+
 	//Routes Home Page.  Change Later to Basic Dashboard
-	'/': "dashboard",
+	'/dashboard': "dashboard",
 
 	'/projects' : 'projectsList',
 	

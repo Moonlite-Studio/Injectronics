@@ -1,4 +1,7 @@
 <template name="menu">
+	<!-- User must be logged in to see this -->
+	{{#if currentUser}}
+
 	<a class="menu-toggler" id="menu-toggler" href="#">
 		<span class="menu-text"></span>
 	</a>
@@ -340,5 +343,6 @@
 
 					
 				</div>
+		{{/if}}
 
 </template>

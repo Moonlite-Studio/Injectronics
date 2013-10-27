@@ -28,3 +28,98 @@ html,body{
 	-webkit-box-shadow: 0 1px 1px rgba(0,0,0,.0.05);
 	box-shadow: 0 1px 1px rgba(0,0,0,0.05);
 }
+
+.splashpage {
+	margin-left:0px!important;
+	text-align:center;
+	margin: 0 auto;
+}
+
+
+
+.logo {
+	margin: 0 auto;
+	text-align: center;
+}
+
+.signup {
+	text-align: center;
+}
+
+.signin {
+	padding: 10px 60px!important;
+}
+
+.signInButton {
+	padding-left:67px;
+	padding-right:67px;
+}
+
+.signupline {
+	color:#c3c3c3;
+	margin-top:16px;
+	font-size:14px;
+	line-height:19px;
+}
+
+.signUpInput {
+	margin-bottom: 10px;
+}
+
+.signupline{
+	margin-bottom: 10px;
+}
+
+.logo {
+		max-width:250px;
+	}
+.splash{
+		margin:0 auto;
+
+	}
+
+.brandName {
+	margin-bottom:20px;
+	
+}
+
+.logInModal {
+	width: 400px;
+}
+
+.passwordLine {
+	margin-top:10px;
+}
+
+.submitSignIn {
+	margin-top: 10px;
+}
+
+.brandName h2{
+	font-family: Lato, sans seriff;
+}
+
+@media (min-width: 400px){
+	.splash{
+		margin-top:25px;
+
+	}
+
+}
+
+@media (min-width: 992px){
+	.splash{
+		margin-top:100px ;
+
+	}
+
+}
+
+
+@media (min-width: 1200px){
+	.splash{
+		margin-top:200px;
+
+	}
+
+}

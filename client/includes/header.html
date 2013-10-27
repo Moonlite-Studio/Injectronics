@@ -1,4 +1,6 @@
 <template name ="header">
+	<!--User must be logged in.-->
+	{{#if currentUser}}
 	<div class="navbar navbar-default" id="navbar">
 			<script type="text/javascript">
 				try{ace.settings.check('navbar' , 'fixed')}catch(e){}
@@ -265,4 +267,5 @@
 				</div><!-- /.navbar-header -->
 			</div><!-- /.container -->
 		</div>
+	{{/if}}
 </template>
