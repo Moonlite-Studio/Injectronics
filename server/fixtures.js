@@ -31,3 +31,44 @@ if (Projects.find().count() === 0) {
         submitted: now
     });
 }
+
+if (Entries.find().count() === 0){
+    var now = new Date().getTime();
+
+    var artId = Meteor.users.insert({
+        profile: { name: 'Art Vandelay' }
+    });
+
+    Entries.insert({
+        name: 'Art Vandelay',
+        uId : artId,
+        submitted: now,
+        description: "Uploaded info about the addition to the guggenheimer. You know it didn't really take that long.",
+        projectId: "3YgGrTC7TrL65pgxs"
+    });
+
+    Entries.insert({
+        name: 'Denny Scott',
+        uId : artId,
+        submitted: now,
+        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. ",
+        projectId: "3YgGrTC7TrL65pgxs"
+    });
+
+    Entries.insert({
+        name: 'Travis Scott',
+        uId : artId,
+        submitted: now,
+        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. ",
+        projectId: "3YgGrTC7TrL65pgxs"
+    });
+
+    Entries.insert({
+        name: 'Kevin MacKay',
+        uId : artId,
+        submitted: now,
+        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. ",
+        projectId: "3YgGrTC7TrL65pgxs"
+    });
+
+}
