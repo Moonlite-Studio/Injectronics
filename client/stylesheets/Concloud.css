@@ -200,3 +200,13 @@ html,body{
 .postContent{
 	margin-top:10px;
 }
+
+.userTitle {
+	color: #999999;
+	font-weight:bold;
+	text-align:center;
+}
+
+.miniTitle {
+	color:#999999;
+}

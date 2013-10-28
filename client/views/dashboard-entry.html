@@ -1,4 +1,4 @@
-<template name="dashboard-entry">
+<template name="dashboardEntry">
 	<div class="col-xs-12">
 					<div class="panel panel-default">
 						<div class="panel-body">
@@ -7,17 +7,17 @@
 								
 								<div class="col-xs-9 profileData">
 									<div class="row">
-										<a href="#" class="toProfile">Art Vandelay</a>
+										<a href="#" class="toProfile">{{name}}</a>
 									</div>
 									<div class="row theDate">
-										Posted On November 14th, 2013 at 10:45 PM.
+										Posted On {{convertedTime}}
 									</div>
 								</div>
 
 
 							</div>
 							<div class="postContent">
-								Uploaded info about the addition to the guggenheimer. You know it didn't really take that long. 
+								{{description}}
 							</div>
 
 
@@ -25,7 +25,7 @@
 						<div class="panel-footer">
 							<div class="seeProject">
 								<i class="fa fa-folder"></i>
-								<a href="#">Go To Project</a>
+								<a href="projects/{{projectId}}">Go To Project</a>
 
 								<span class="unsubscribe">
 									<i class="fa fa-unlock"></i>
