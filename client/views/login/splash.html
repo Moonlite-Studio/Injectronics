@@ -23,22 +23,23 @@
 								<h4 class="modal-title">Login to Concloud</h4>
 							</div>
 							<div class="modal-body">
-								<form method="post" action='' name="login_form">
+								<form method="post" id = "login_form" action='' name="login_form">
 									<div class="row">
-										<p><input type="text" class="col-sm-10 col-sm-offset-1" name="eid" id="email" placeholder="Email"></p>
+										<p><input type="text" class="col-sm-10 col-sm-offset-1 onSub" name="eid" id="email" placeholder="Email"></p>
 									</div>
 									<div class="row passwordLine">
-										<p><input type="password" class="col-sm-10 col-sm-offset-1" name="passwd" id="passwd" placeholder="Password"></p>
+										<p><input type="password" class="col-sm-10 col-sm-offset-1 onSub" name="passwd" id="passwd" placeholder="Password"></p>
 									</div>
 									<div class="row submitSignIn">
 
-										<button type="button" class="btn btn-primary signInButton " id="logButton">Sign in</button>
+										<button type="button" class="btn btn-primary signInButton " id="logButton" data-dismiss="modal" aria-hidden="true">Sign in</button>
 									</div>
 									<div class="row fogotPassword">
-										<a href="#">Forgot Password?</a>    
+										<a href="#" id = "forgot-btn">Forgot Password?</a>    
 									</div>
 
 								</form>
+
 							</div>
 							<div class="modal-footer">
 								<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -50,7 +51,7 @@
 				<div class="signupline">or <a id="signup" href="#">Sign Up</a></div>
 				<div class="toggler">
 					<div id="effect" class="">
-						<form>
+						<form id="sign-form">
 							<input type="text" class="col-sm-12 signUpInput" name="sign-first-name" id="sign-first-name" placeholder="First Name">
 							<input type="text" class="col-sm-12 signUpInput" name="sign-last-name" id="sign-last-name" placeholder="Last Name">
 							<input type="text" class="col-sm-12 signUpInput" name="email" id="sign-email" placeholder="Email">
