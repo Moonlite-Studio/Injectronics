@@ -29,13 +29,15 @@ html,body{
 	box-shadow: 0 1px 1px rgba(0,0,0,0.05);
 }
 
+
+/**
+ * Splash Page
+ */
 .splashpage {
 	margin-left:0px!important;
 	text-align:center;
 	margin: 0 auto;
 }
-
-
 
 .logo {
 	margin: 0 auto;
@@ -122,4 +124,79 @@ html,body{
 
 	}
 
+}
+
+/**
+ * Dashboard
+ */
+
+.dashboard {
+	margin-top: 20px;
+}
+
+@media (min-width: 768px){
+	.dashboard .container{
+		max-width:992px;
+	}
+
+	.dashboard .col-sm-3, .dashboard .col-sm-9 {
+		padding-right:0px;
+		padding-left:5px;
+	}
+
+	.dashboard .row {
+		margin-right: auto;
+	}
+}
+
+@media (min-width: 1200px){
+	.dashboard .container{
+		max-width:1170px;
+	}
+
+	.dashboard .col-sm-3, .dashboard .col-sm-9 {
+		padding-right:0px;
+		padding-left:5px;
+	}
+
+	.dashboard .row {
+		margin-right: auto;
+	}
+}
+
+@media (max-width: 2200px){
+	.dashboard .container{
+		max-width:2170px;
+	}
+
+	.dashboard .col-sm-3, .dashboard .col-sm-9 {
+		padding-right:0px;
+		padding-left:5px;
+	}
+
+	.dashboard .row {
+		margin-right: auto;
+	}
+}
+
+.thumbnail{
+	width:50px;
+	height:50px;
+	margin-left:10px;
+}
+
+.profileData {
+	margin-left:10px;
+}
+
+.theDate {
+	color:#AAAAAA;
+}
+
+.unsubscribe {
+	margin-left:10px;
+}
+
+.postContent{
+	margin-top:10px;
 }
