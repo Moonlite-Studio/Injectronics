@@ -1,118 +1,120 @@
 <template name="splash">
-	<div class = 'container splash'>
-		
+	<div class="splashpage">
+		<div class = 'container splash'>
+			
 
-		<div class = "row-fluid pagination-centered text-center">
-			<div class = "col-md-6 hidden-sm hidden-xs">
-				<img src="img/devices.png">	
-			</div>	
+			<div class = "row-fluid pagination-centered text-center">
+				<div class = "col-md-6 hidden-sm hidden-xs">
+					<img src="img/devices.png">	
+				</div>	
 
-			<div class = "col-md-6 col-md-offset-0 col-sm-6 col-sm-offset-3 signup">
-				<img class = "logo" src="img/cloud.png">
-				<div class="brandName"><h2>Concloud</h3></div>
+				<div class = "col-md-6 col-md-offset-0 col-sm-6 col-sm-offset-3 signup">
+					<img class = "logo" src="img/cloud.png">
+					<div class="brandName"><h2>Concloud</h3></div>
 
 
-				<button class="btn btn-lg btn-primary signin" data-toggle="modal" href="#myModal">Sign In</button>
+					<button class="btn btn-lg btn-primary signin" data-toggle="modal" href="#myModal">Sign In</button>
 
-				<!-- Modal -->
-				<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-					<div class="modal-dialog logInModal">
-						<div class="modal-content">
-							<div class="modal-header">
-								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-								<h4 class="modal-title">Login to Concloud</h4>
-							</div>
-							<div class="modal-body">
-								<form method="post" action='' name="login_form">
-									<div class="row">
-										<p><input type="text" class="col-sm-10 col-sm-offset-1" name="eid" id="email" placeholder="Email"></p>
-									</div>
-									<div class="row passwordLine">
-										<p><input type="password" class="col-sm-10 col-sm-offset-1" name="passwd" placeholder="Password"></p>
-									</div>
-									<div class="row submitSignIn">
+					<!-- Modal -->
+					<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+						<div class="modal-dialog logInModal">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+									<h4 class="modal-title">Login to Concloud</h4>
+								</div>
+								<div class="modal-body">
+									<form method="post" action='' name="login_form">
+										<div class="row">
+											<p><input type="text" class="col-sm-10 col-sm-offset-1" name="eid" id="email" placeholder="Email"></p>
+										</div>
+										<div class="row passwordLine">
+											<p><input type="password" class="col-sm-10 col-sm-offset-1" name="passwd" placeholder="Password"></p>
+										</div>
+										<div class="row submitSignIn">
 
-										<button type="submit" class="btn btn-primary signInButton ">Sign in</button>
-									</div>
-									<div class="row fogotPassword">
-										<a href="#">Forgot Password?</a>    
-									</div>
+											<button type="submit" class="btn btn-primary signInButton ">Sign in</button>
+										</div>
+										<div class="row fogotPassword">
+											<a href="#">Forgot Password?</a>    
+										</div>
 
-								</form>
-							</div>
-							<div class="modal-footer">
-								<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-							</div>
-						</div><!-- /.modal-content -->
-					</div><!-- /.modal-dialog -->
-				</div><!-- /.modal -->
+									</form>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+								</div>
+							</div><!-- /.modal-content -->
+						</div><!-- /.modal-dialog -->
+					</div><!-- /.modal -->
 
-				<div class="signupline">or <a id="signup" href="#">Sign Up</a></div>
-				<div class="toggler">
-					<div id="effect" class="">
-						<form>
-							<input type="text" class="col-sm-12 signUpInput" name="username" id="username" placeholder="User Name">
-							<input type="text" class="col-sm-12 signUpInput" name="username" id="username" placeholder="Email">
-							<input type="text" class="col-sm-12 signUpInput" name="username" id="username" placeholder="Password">
-							<input type="text" class="col-sm-12 signUpInput" name="username" id="username" placeholder="Confirm Password">
-							<input type="text" class="col-sm-12 signUpInput" name="username" id="username" placeholder="Template Code">
-							<input type="submit" class="btn btn-success" value="Sign Up">
-						</form>
+					<div class="signupline">or <a id="signup" href="#">Sign Up</a></div>
+					<div class="toggler">
+						<div id="effect" class="">
+							<form>
+								<input type="text" class="col-sm-12 signUpInput" name="username" id="username" placeholder="User Name">
+								<input type="text" class="col-sm-12 signUpInput" name="username" id="username" placeholder="Email">
+								<input type="text" class="col-sm-12 signUpInput" name="username" id="username" placeholder="Password">
+								<input type="text" class="col-sm-12 signUpInput" name="username" id="username" placeholder="Confirm Password">
+								<input type="text" class="col-sm-12 signUpInput" name="username" id="username" placeholder="Template Code">
+								<input type="submit" class="btn btn-success" value="Sign Up">
+							</form>
+						</div>
 					</div>
-				</div>
 
+				</div>	
 			</div>	
-		</div>	
 
-		
+			
 
+		</div>
+
+		<hr class="featurette-divider">
+
+		<div class="container">
+			<!--Featurette -->
+			<div class="row featurette">
+				<div class="col-md-7">
+					<h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
+					<p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+				</div>
+				<div class="col-md-5">
+					<img class="featurette-image img-responsive" src="img/featurette.png" alt="500x500">
+				</div>
+			</div>
+
+			<hr class="featurette-divider">
+
+			<!--Featurette -->
+			<div class="row featurette">
+				<div class="col-md-5">
+					<img class="featurette-image img-responsive" src="img/featurette.png" alt="500x500">
+				</div>
+				<div class="col-md-7">
+					<h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
+					<p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+				</div>
+			</div>
+
+			<hr class="featurette-divider">
+			<div class="row featurette">
+				<div class="col-md-7">
+					<h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
+					<p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+				</div>
+				<div class="col-md-5">
+					<img class="featurette-image img-responsive" src="img/featurette.png" alt="500x500">
+				</div>
+			</div>
+
+			<hr class="featurette-divider">
+
+			<!-- FOOTER -->
+			<footer>
+				<p class="pull-right"><a href="#">Back to top</a></p>
+				<p>© 2013 Company, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+			</footer>
+
+		</div>
 	</div>
-
-	<hr class="featurette-divider">
-
-<div class="container">
-		<!--Featurette -->
-		<div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-        </div>
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive" src="img/featurette.png" alt="500x500">
-        </div>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <!--Featurette -->
-      <div class="row featurette">
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive" src="img/featurette.png" alt="500x500">
-        </div>
-        <div class="col-md-7">
-          <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-        </div>
-      </div>
-
-      <hr class="featurette-divider">
-      <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-        </div>
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive" src="img/featurette.png" alt="500x500">
-        </div>
-      </div>
-
-      <hr class="featurette-divider">
-
-	<!-- FOOTER -->
-      <footer>
-        <p class="pull-right"><a href="#">Back to top</a></p>
-        <p>© 2013 Company, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
-      </footer>
-
-  </div>
 </template>
