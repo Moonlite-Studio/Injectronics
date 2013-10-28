@@ -1,10 +1,7 @@
 Meteor.Router.add({
 
-	//Routes Signin Page.
-	'/': "splash",
-
-	//Routes Home Page.  Change Later to Basic Dashboard
-	'/dashboard': "dashboard",
+	//Routes to dashboard Page.
+	'/': "dashboard",
 
 	'/projects' : 'projectsList',
 	
@@ -19,3 +16,16 @@ Meteor.Router.add({
 
 
 });
+
+Meteor.Router.filters({
+    'requireLogin': function(page) {
+        if (Meteor.user())
+            return page;
+        else if (Meteor.loggingIn())
+            return 'loading';
+        else
+            return 'splash';
+    }
+});
+Meteor
+.Router.filter('requireLogin', {except: 'splash'});
