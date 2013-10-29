@@ -12,7 +12,10 @@ Meteor.Router.add({
 	},
 
 	//Routes to the Submit page, no args
-	'/submit': 'projectCreate'
+	'/submit': 'projectCreate',
+
+	//This page is used for debuging and testing.  Delete before release
+	'/debug': 'debugEntries'
 
 
 });

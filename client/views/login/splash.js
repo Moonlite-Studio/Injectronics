@@ -47,15 +47,14 @@ Template.splash.events({
 			password : $('#sign-password').val(),
 			profile : {
 				name : ($('#sign-first-name').val() + " " + $('#sign-last-name').val()),
-				templateCode : $('#sign-template-code').val()
+				templateCode : $('#sign-template-code').val(),
+				entries: []
 			}
 		};
 
 		Accounts.createUser(options, function () {
-			//Enter code to happen after creation of 
-			//user here.
-			
 		});
+		
 	}
 });
 

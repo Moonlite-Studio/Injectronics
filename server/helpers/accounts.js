@@ -10,3 +10,9 @@ Accounts.validateNewUser(function (user) {
 Accounts.config({
 	sendVerificationEmail : true
 });
+
+/*
+addEntry = function() {
+	return Meteor.user.profile.entries.unshift("Hello");
+};
+*/

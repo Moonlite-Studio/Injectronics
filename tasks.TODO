@@ -1,0 +1,12 @@
+Entries Collection
+ ☐ When user is created, add to Entries Collection
+
+ ☐ When a user is created add them to a large list of subscribeable items
+
+ ☐ The entires collection will have an array of objects when initalized
+
+ ☐ function allowing simple addition of object to the collection
+
+ ☐ New Projects must be able to be subscribed to
+
+ ☐ Entries will have a max of 15 updates to display to a user
