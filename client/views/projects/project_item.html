@@ -7,7 +7,7 @@
 			<div class="panel-body">
 				<span class= "descriptionText">Description: {{description}}</span>
 				<a class="btn btn-primary pull-right project-button" href="{{projectPagePath this}}">Enter Project</a>
-				<a class="btn btn-danger pull-right project-button" id="subscribeButton">Click to Subscribe</a>
+				<a class="btn {{btnSubscribed}} pull-right project-button" id="subscribeButton">{{projectSubscribed}}</a>
 				<span class="authorText"><p>Submitted by: {{author}}</p></span>
 				<span class="authorText"><p><a id="updateButton">Update</a></p></span>
 				

@@ -1,4 +1,9 @@
 Template.projectCreate.events({
+	/**
+	 * Creates a projects and inserts it in the project collection
+	 * @param  Event event The event of clicking the button
+	 * @return void
+	 */
 	'submit form': function (event) {
 		//This will stop the default submitting of the form
 		event.preventDefault();
@@ -20,7 +25,7 @@ Template.projectCreate.events({
 					Meteor.Router.to('projectPage', error.details);
                 }
             } else {
-            	//no errors send to the new page
+                //no errors send to the new page
 				Meteor.Router.to('projectPage', id);
             }
         });

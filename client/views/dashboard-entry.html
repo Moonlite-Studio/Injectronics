@@ -30,10 +30,17 @@
 								<i class="fa fa-folder"></i>
 								<a href="projects/{{projectId}}">Go To Project</a>
 
-								<span class="unsubscribe">
-									<i class="fa fa-unlock"></i>
-									<a href="#">Unsubscribe</a>
-								</span>
+								{{#if userSubscribe}}
+									<span class="unsubscribe">
+										<i class="fa fa-unlock"></i>
+										<a href="#" id ="unsubscribe">Unsubscribe</a>
+									</span>
+								{{else}}
+									<span class="subscribe">
+										<i class="fa fa-lock"></i>
+										<a href="#" id = "subscribe">Subscribe</a>
+									</span>
+								{{/if}}
 							</div>
 						</div>
 					</div>
