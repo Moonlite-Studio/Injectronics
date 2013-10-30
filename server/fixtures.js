@@ -19,7 +19,10 @@ if (Projects.find().count() === 0) {
         description: "A terrific website made by a terrific man",
         url: "http://www.google.com",
         authorID: '2',
-        submitted: now
+        stakeholders: [],
+        submitted: now,
+        lastUpdated: new Date().getTime(),
+        updateAuthor: "Travis Scott"
     });
 
         Projects.insert({
@@ -28,7 +31,10 @@ if (Projects.find().count() === 0) {
         description: "A Horrible Website made by a Horrible Web Designer",
         url: "http://heaven.internetarchaeology.org/heaven.html#bottom",
         authorID: '3',
-        submitted: now
+        stakeholders: [],
+        submitted: now,
+        lastUpdated: new Date().getTime(),
+        updateAuthor: "Denny Scott"
     });
 }
 

@@ -11,8 +11,12 @@ Accounts.config({
 	sendVerificationEmail : true
 });
 
-/*
-addEntry = function() {
-	return Meteor.user.profile.entries.unshift("Hello");
-};
-*/
+Meteor.methods({
+	addSubscription: function(subID){
+		var user = Meteor.user();
+
+		var foundEntry = Meteor.users.findOne(Meteor.userId());
+
+		Meteor.users.update(Meteor.userId(), { $addToSet: {"profile.subscriptions" : subID}});
+	}
+});

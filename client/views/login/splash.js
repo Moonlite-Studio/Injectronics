@@ -10,8 +10,8 @@ Template.splash.events({
 		var user =  $('#email').val();
 		var password = $('#passwd').val();
 		Meteor.loginWithPassword(user, password, function (error) {
-				Meteor.Router.to('dashboard');
-				$('#myModal').modal('hide');
+			Meteor.Router.to('dashboard');
+			$('#myModal').modal('hide');
 		});
 	},
 
@@ -22,10 +22,10 @@ Template.splash.events({
 		/*Accounts.forgotPassword({
 			email: Meteor.user().emails[0].address
 		});
-		*/
-	},
+*/
+},
 
-		'keypress .onSub': function (event) {
+'keypress .onSub': function (event) {
 		//This will stop the default submitting of the form
 		if(event.which === 13){
 			var user =  $('#email').val();
@@ -48,11 +48,16 @@ Template.splash.events({
 			profile : {
 				name : ($('#sign-first-name').val() + " " + $('#sign-last-name').val()),
 				templateCode : $('#sign-template-code').val(),
-				entries: []
+				subscriptions: []
 			}
 		};
 
+
 		Accounts.createUser(options, function () {
+			var entry = {};
+			//Calls the newly created User's function to create
+			//an ectry for the user
+			//Meteor.user()
 		});
 		
 	}

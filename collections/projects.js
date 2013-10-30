@@ -28,9 +28,11 @@ Meteor.methods({
 		//filling in other keys
 		var proj = _.extend(_.pick(projectAttributes, 'title', 'description'), {
 			authorID: user._id,
-			author: user._id, //create author!!
+			author: user.profile.name,
 			submitted: new Date().getTime(),
-			stakeholders: []
+			stakeholders: [],
+			lastUpdated: new Date().getTime(),
+			updateAuthor: user.profile.name
 			//NEED TO FILL IN DATA FOR HOLDING ACTUAL DOCUMENTS!!
 		});
 
@@ -39,5 +41,20 @@ Meteor.methods({
 
 		//returns the ID of the new project
 		return projectID;
+	},
+
+	/**
+	 * This function will update the project passed to
+	 * have a new update Author and update Time
+	 * @param  String id The id of the project to be updated
+	 * @return void    Returns nothing
+	 */
+	updateProject: function(id){
+		user = Meteor.user();
+
+		var project = Projects.findOne(id);
+
+		Projects.update(id, { $set: {"lastUpdated" : new Date().getTime()}});
+		Projects.update(id, { $set: {"updateAuthor" : user.profile.name}});
 	}
 });
