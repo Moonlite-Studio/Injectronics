@@ -10,6 +10,5 @@ preserve-inputs
 bootstrap-3
 accounts-password
 accounts-ui
-accounts-ui-bootstrap-3
 router
 spin
