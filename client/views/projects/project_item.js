@@ -1,8 +1,14 @@
 Template.projectItem.events({
 	'click #subscribeButton': function () {
 
-		Meteor.call('addSubscription', this._id, function (error, result) {
-		});
+		var subs = Meteor.user().profile.subscriptions;
+		if(subs.indexOf(this._id) === -1){
+			Meteor.call('addSubscription', this._id, function (error, result) {
+			});
+		}else{
+			Meteor.call('removeSubscription', this._id, function (error, result) {
+			});
+		}
 
 
 		if($('#subscribeButton').hasClass('btn-danger')){

@@ -15,8 +15,11 @@ Meteor.methods({
 	addSubscription: function(subID){
 		var user = Meteor.user();
 
-		var foundEntry = Meteor.users.findOne(Meteor.userId());
-
 		Meteor.users.update(Meteor.userId(), { $addToSet: {"profile.subscriptions" : subID}});
+	},
+	removeSubscription: function(subID){
+		var user = Meteor.user();
+
+		Meteor.users.update(Meteor.userId(), { $pull: {"profile.subscriptions" : subID}});
 	}
 });
