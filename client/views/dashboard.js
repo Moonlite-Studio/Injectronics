@@ -23,7 +23,8 @@ Template.dashboard.helpers({
 					description: "This project has been recently updated.",
 					submitted: project.lastUpdated,
 					author: project.updateAuthor,
-					projectId: project._id
+					projectId: project._id,
+					type: "project"
 				});
 			}
 			//If the project is not subscribed to, and also
@@ -34,7 +35,8 @@ Template.dashboard.helpers({
 					description: "This is a new project that has just been made.  Perhaps you would like to subscribe to it?",
 					submitted: project.lastUpdated,
 					author: project.updateAuthor,
-					projectId: project._id
+					projectId: project._id,
+					type: "project"
 				});
 			}
 		});

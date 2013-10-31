@@ -17,6 +17,12 @@ Template.dashboardEntry.helpers({
 		}	else {
 			return false;
 		}
+	},
+
+	getAvatar: function (){
+		if(this.type === "project"){
+			return "img/";
+		}
 	}
 });
 

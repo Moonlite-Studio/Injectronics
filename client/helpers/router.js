@@ -15,7 +15,9 @@ Meteor.Router.add({
 	'/submit': 'projectCreate',
 
 	//This page is used for debuging and testing.  Delete before release
-	'/debug': 'debugEntries'
+	'/debug': 'debugEntries',
+
+	'/accountManagement' : 'accountManagement'
 
 
 });

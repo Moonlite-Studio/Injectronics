@@ -10,3 +10,13 @@ Entries Collection
  ☐ New Projects must be able to be subscribed to
 
  ☐ Entries will have a max of 15 updates to display to a user
+
+ ☐ When an entry already present is entered, will it delete the old one?
+
+Entries Object
+ ☐ type - String
+ ☐ description - String
+ ☐ pictureLink - String
+ ☐ ItemID
+ ☐ Author Name
+
