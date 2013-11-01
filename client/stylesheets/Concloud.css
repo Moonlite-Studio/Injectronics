@@ -85,9 +85,7 @@ html,body{
 	
 }
 
-.logInModal {
-	width: 400px;
-}
+
 
 .passwordLine {
 	margin-top:10px;
@@ -100,6 +98,77 @@ html,body{
 .brandName h2{
 	font-family: Lato, sans seriff;
 }
+
+/**
+ * Login Forms
+ * @type
+ */
+#login_form input[type="text"]:focus, #login_form input[type="password"]:focus {
+background: #feffef;
+}
+
+.logInModal {
+	width: 400px;
+}
+
+.login-header, .login-footer {
+	background-color: #444!important;
+	color:#fff;
+	font-size:25px;
+}
+
+.login-footer button{
+	padding-left:40px;
+	padding-right:40px;
+}
+
+.close-me{
+	color:white;
+}
+
+.submitUnderText {
+	color:#ffa800;
+	text-shadow: 1px 1px 1px #fff;
+}
+
+.forgotten-password:hover{
+	color:#AAAAAA;
+	text-decoration: none;
+}
+
+.close-login {
+	color:black;
+}
+
+.login-footer .register a{
+	font-size:14px;
+	color:#ffa800;
+	text-shadow: 1px 1px 1px #000;
+	float: left;
+}
+
+.login-footer .register a:hover{
+	text-decoration: none;
+	color:#aaaaaa;
+}
+
+#login_form input[type="text"], #login_form input[type="password"] {
+	border: solid 1px #E5E5E5;
+	background: #FFFFFF;
+	margin: 5px 30px 0px 30px;
+	padding: 9px;
+	display: block;
+	font-size: 16px;
+	background: -webkit-gradient( linear, left top, left 25, from(#FFFFFF), color-stop(4%, #EEEEEE), to(#FFFFFF) );
+	background: -moz-linear-gradient( top, #FFFFFF, #EEEEEE 1px, #FFFFFF 25px );
+	-moz-box-shadow: 0px 0px 8px #f0f0f0;
+	-webkit-box-shadow: 0px 0px 8px #f0f0f0;
+	box-shadow: 0px 0px 8px #f0f0f0;
+/**
+ * End of Login Forms
+ * 
+ */
+
 
 @media (min-width: 400px){
 	.splash{

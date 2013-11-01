@@ -18,36 +18,104 @@
 
 					<!-- Modal -->
 					<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-						<div class="modal-dialog logInModal">
+						
+						<!-- Log In Dialog -->
+						<div class="modal-dialog active logInModal">
 							<div class="modal-content">
-								<div class="modal-header">
-									<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+								<div class="modal-header login-header">
+									<button type="button" class="close close-me" data-dismiss="modal" aria-hidden="true">&times;</button>
 									<h4 class="modal-title">Login to Concloud</h4>
 								</div>
 								<div class="modal-body">
 									<form method="post" id = "login_form" action='' name="login_form">
 										<div class="row">
-											<p><input type="text" class="col-sm-10 col-sm-offset-1 onSub" name="eid" id="email" placeholder="Email"></p>
+											<p><input type="text" class="col-xs-10 col-sm-offset-1 onSub" name="eid" id="email" placeholder="Email"></p>
 										</div>
 										<div class="row passwordLine">
-											<p><input type="password" class="col-sm-10 col-sm-offset-1 onSub" name="passwd" id="passwd" placeholder="Password"></p>
+											<p><input type="password" class="col-xs-10 col-sm-offset-1 onSub" name="passwd" id="passwd" placeholder="Password"></p>
 										</div>
 										<div class="row submitSignIn">
 
 											<button type="button" class="btn btn-primary signInButton " id="logButton" data-dismiss="modal" aria-hidden="true">Sign in</button>
 										</div>
 										<div class="row fogotPassword">
-											<a href="#" id = "forgot-btn">Forgot Password?</a>    
+											<a href="#" id = "forgot-btn" class="submitUnderText newPass">Forgot Password?</a>    
 										</div>
 
 									</form>
 
 								</div>
-								<div class="modal-footer">
-									<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+								<div class="modal-footer login-footer">
+									<span class="register"> <a href="#" class="registerAccount">Don't have an account yet? Register here</a></span>
+									
 								</div>
 							</div><!-- /.modal-content -->
-						</div><!-- /.modal-dialog -->
+						</div><!-- /. Log-In modal-dialog -->
+
+						<!-- Sign Up Modal -->
+
+						<div class="modal-dialog signUpModal">
+							<div class="modal-content">
+								<div class="modal-header login-header">
+									<button type="button" class="close close-me" data-dismiss="modal" aria-hidden="true">&times;</button>
+									<h4 class="modal-title">Sign up to Concloud</h4>
+								</div>
+								<div class="modal-body">
+									<form method="post" id = "login_form" action='' name="login_form">
+										<div class="row">
+											<p><input type="text" class="col-xs-11 onSub" name="eid" id="email" placeholder="Email"></p>
+										</div>
+										<div class="row passwordLine">
+											<p><input type="password" class="col-xs-11 onSub" name="passwd" id="passwd" placeholder="Password"></p>
+										</div>
+										<div class="row submitSignIn">
+
+											<button type="button" class="btn btn-primary signInButton " id="logButton" data-dismiss="modal" aria-hidden="true">Sign in</button>
+										</div>
+
+									</form>
+
+								</div>
+								<div class="modal-footer login-footer">
+									<span class="register"> <a href="#" class="returnLogin">Already have an account? Login here</a></span>
+									
+								</div>
+							</div><!-- /.modal-content -->
+						</div><!--End of Sign Up Modal -->
+
+
+						<!--Forgot Password Modal -->
+
+						<div class="modal-dialog newPassModal">
+							<div class="modal-content">
+								<div class="modal-header login-header">
+									<button type="button" class="close close-me" data-dismiss="modal" aria-hidden="true">&times;</button>
+									<h4 class="modal-title">Forgot Password</h4>
+								</div>
+								<div class="modal-body">
+									<form method="post" id = "login_form" action='' name="login_form">
+										<div class="row passwordLine">
+											<p><input type="password" class="col-xs-11 onSub" name="passwd" id="passwd" placeholder="Password"></p>
+										</div>
+										<div class="row submitSignIn">
+
+											<button type="button" class="btn btn-primary signInButton " id="logButton" data-dismiss="modal" aria-hidden="true">Sign in</button>
+										</div>
+										<div class="row fogotPassword">
+											<a href="#" class="returnLogin submitUnderText">Return to Login.</a>    
+										</div>
+
+									</form>
+
+								</div>
+								<div class="modal-footer login-footer">
+									<span class="register"> <a href="#" class="registerAccount">Don't have an account yet? Register here</a></span>
+									
+								</div>
+							</div><!-- /.modal-content -->
+						</div><!--End of Password Modal -->
+
+
 					</div><!-- /.modal -->
 
 					<div class="signupline">or <a id="signup" href="#">Sign Up</a></div>
