@@ -28,11 +28,13 @@ Meteor.methods({
 		//filling in other keys
 		var proj = _.extend(_.pick(projectAttributes, 'title', 'description'), {
 			authorID: user._id,
-			author: user.profile.name,
+			authorName: user.profile.name,
 			submitted: new Date().getTime(),
-			stakeholders: [],
-			lastUpdated: new Date().getTime(),
-			updateAuthor: user.profile.name
+			update: [{
+				updateDate: new Date().getTime(),
+				updateAuthorName: user.profile.name,
+				updateAuthorID: user._id
+			}]
 			//NEED TO FILL IN DATA FOR HOLDING ACTUAL DOCUMENTS!!
 		});
 
