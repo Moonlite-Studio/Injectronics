@@ -85,12 +85,6 @@ html,body{
 	
 }
 
-
-
-.passwordLine {
-	margin-top:10px;
-}
-
 .submitSignIn {
 	margin-top: 10px;
 }
@@ -107,7 +101,7 @@ html,body{
 background: #feffef;
 }
 
-.logInModal {
+.logInModal, .signUpModal, .newPassModal {
 	width: 400px;
 }
 
