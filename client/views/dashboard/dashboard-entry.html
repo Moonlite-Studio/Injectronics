@@ -1,46 +1,51 @@
 <template name="dashboardEntry">
 	<div class="col-xs-12">
-					<div class="panel panel-default">
-						<div class="panel-body">
-							<div class="row">
-								<img src="img/avatar.png" class="thumbnail img-thumbnail col-xs-3">
-								
-								<div class="col-xs-9 profileData">
-									
-									<div class="row theDate">
-										Posted On {{convertedTime}}
-									</div>
-									<div class ="row theAuthor">
-										{{author}}
-									</div>
-								</div>
+		<div class="panel panel-default">
+			<div class="panel-body">
+				<div class="row">
+					<img src="img/avatar.png" class="thumbnail img-thumbnail col-xs-3">
 
-
-							</div>
-							<div class="postContent">
-								{{description}}
-							</div>
-
-
+					<div class="col-xs-9 profileData">
+						<div class="row">
+							<h6 class="toProfile"><a href="projects/{{projectId}}">{{name}}</a></h6>
 						</div>
-						<div class="panel-footer">
-							<div class="seeProject">
-								<i class="fa fa-folder"></i>
-								<a href="projects/{{projectId}}">Go To Project</a>
 
-								{{#if userSubscribe}}
-									<span class="unsubscribe">
-										<i class="fa fa-unlock"></i>
-										<a href="#" id ="unsubscribe">Unsubscribe</a>
-									</span>
-								{{else}}
-									<span class="subscribe">
-										<i class="fa fa-lock"></i>
-										<a href="#" id = "subscribe">Subscribe</a>
-									</span>
-								{{/if}}
-							</div>
+						<div class ="row theAuthor">
+							{{author}}
 						</div>
+
+						<div class="row theDate">
+							Posted On {{convertedTime}}
+						</div>
+
 					</div>
+
+
+				</div>
+				<div class="postContent">
+					{{description}}
+				</div>
+
+
 			</div>
+			<div class="panel-footer">
+				<div class="seeProject">
+					<i class="fa fa-folder"></i>
+					<a href="projects/{{projectId}}">Go To Project</a>
+
+					{{#if userSubscribe}}
+					<span class="unsubscribe">
+						<i class="fa fa-unlock"></i>
+						<a href="#" id ="unsubscribe">Unsubscribe</a>
+					</span>
+					{{else}}
+					<span class="subscribe">
+						<i class="fa fa-lock"></i>
+						<a href="#" id = "subscribe">Subscribe</a>
+					</span>
+					{{/if}}
+				</div>
+			</div>
+		</div>
+	</div>
 </template>
