@@ -93,6 +93,42 @@ html,body{
 	font-family: Lato, sans seriff;
 }
 
+.thumbnail{
+	width:50px;
+	height:50px;
+	margin-left:10px;
+
+	.insideIcon{
+	padding-top: 30%;
+}
+
+.profileData {
+	margin-left:10px;
+}
+
+.theDate {
+	color:#AAAAAA;
+}
+
+.unsubscribe, .subscribe {
+	margin-left:10px;
+}
+
+.postContent{
+	margin-top:10px;
+}
+
+.userTitle {
+	color: #999999;
+	font-weight:bold;
+	text-align:center;
+}
+
+.miniTitle {
+	color:#999999;
+}
+}
+
 /**
  * Login Forms
  * @type
@@ -158,6 +194,7 @@ background: #feffef;
 	-moz-box-shadow: 0px 0px 8px #f0f0f0;
 	-webkit-box-shadow: 0px 0px 8px #f0f0f0;
 	box-shadow: 0px 0px 8px #f0f0f0;
+}
 /**
  * End of Login Forms
  * 
@@ -242,38 +279,5 @@ background: #feffef;
 	}
 }
 
-.thumbnail{
-	width:50px;
-	height:50px;
-	margin-left:10px;
-}
 
-.insideIcon{
-	padding-top: 30%;
-}
 
-.profileData {
-	margin-left:10px;
-}
-
-.theDate {
-	color:#AAAAAA;
-}
-
-.unsubscribe, .subscribe {
-	margin-left:10px;
-}
-
-.postContent{
-	margin-top:10px;
-}
-
-.userTitle {
-	color: #999999;
-	font-weight:bold;
-	text-align:center;
-}
-
-.miniTitle {
-	color:#999999;
-}
