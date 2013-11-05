@@ -68,9 +68,10 @@ Template.splash.events({
 
 	//This is the event used if a user submits a new
 	//user signup form
-	'submit form': function (event) {
+	'click #signUpButton': function (event) {
 		//This will stop the default submitting of the form
 		event.preventDefault();
+		alert("here");
 		var time = new Date().getTime();
 		var options = {
 			email : $('#sign-email').val(),

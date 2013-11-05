@@ -1,0 +1,413 @@
+.main-chart {
+    height: 300px;
+    margin-top: 40px;
+    margin-bottom: 58px;
+    border-top: 1px dashed #c7cbd5;
+}
+
+.main-chart .bar {
+    height: 100%;
+    position: relative;
+    width: 3%;
+    margin: 20px 1%;
+    float: left;
+    text-align: center;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    z-index: 10;
+}
+
+.main-chart .bar:before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    margin-top: -24px;
+    left: 50%;
+    margin-left: -4px;
+    height: 8px;
+    width: 8px;
+    background: #c7cbd5;
+}
+
+.main-chart .bar:after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    margin-top: -10px;
+    left: 50%;
+    margin-left: -1px;
+    height: 100%;
+    width: 2px;
+    background: #c7cbd5;
+}
+
+.main-chart .bar .title {
+    position: absolute;
+    top: -50px;
+    width: 100%;
+    text-align: center;
+}
+
+.main-chart .bar .value {
+    position: absolute;
+    bottom: 0;
+    background: #c7cbd5;
+    color: #c7cbd5;
+    width: 100%;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+.main-chart .bar .value:before {
+    border-top: 5px solid #f5f5f5;
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: -5px;
+    left: 0;
+}
+
+.main-chart .bar .value:hover {
+    background: #36a9e1;
+    color: white;
+}
+
+.main-chart .bar.simple:before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    margin-top: -23px;
+    left: 50%;
+    margin-left: -2px;
+    height: 5px;
+    width: 5px;
+    background: #c7cbd5;
+}
+
+.main-chart .bar.simple:after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    margin-top: -10px;
+    left: 50%;
+    margin-left: 0;
+    height: 100%;
+    width: 1px;
+    background: transparent;
+    border-left: 1px dashed #d6d9e0;
+}
+
+.main-chart .bar.simple .title {
+    top: -46px;
+    font-size: 10px;
+}
+
+.verticalChart {
+    margin: 10px;
+}
+
+.verticalChart .singleBar {
+    width: 6%;
+    display: block;
+    margin: 0 2% 0 2%;
+    float: left;
+}
+
+.verticalChart .singleBar .bar {
+    position: relative;
+    height: 120px;
+    background: #f9f9f9;
+    overflow: hidden;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+}
+
+.verticalChart .singleBar .bar .value {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: #bdea74;
+    color: white;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+}
+
+.verticalChart .singleBar .bar .value span {
+    position: absolute;
+    font-size: 12px;
+    bottom: 0;
+    width: 100%;
+    height: 20px;
+    color: white;
+    text-shadow: 0 -1px 0 #bdea74,0px 1px 0 #bdea74,1px 0 0 #bdea74,-1px 0 0 #bdea74,-1px -1px 0 #bdea74,-1px 1px 0 #bdea74,1px;
+}
+
+/**
+ * Small Stat
+ */
+
+.smallstat {
+    background: white;
+    padding: 10px;
+    position: relative;
+}
+
+.smallstat .boxchart-overlay.blue {
+background: #36a9e1;
+}
+
+.smallstat .boxchart-overlay.red {
+background: #ff5454;
+}
+
+.smallstat i.green {
+    background: #bdea74;
+}
+
+.smallstat i.yellow {
+    background: #eae874;
+}
+
+.smallstat i {
+    text-align: center;
+    display: block;
+    color: white;
+    width: 50px;
+    font-size: 22px;
+    padding: 14px 0;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    float: left;
+    margin-right: 10px;
+}
+
+.smallstat .boxchart-overlay {
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    width: 84px;
+    padding: 10px;
+    text-align: center;
+    margin-right: 10px;
+    float: left;
+    overflow: hidden;
+}
+
+.blue {
+    
+}
+
+.green {
+    color: #bdea74;
+}
+
+.yellow {
+color: #eae874;
+}
+
+.smallstat .title {
+    top: 12px;
+    color: #c7cbd5;
+    display: block;
+    font-size: 14px;
+    margin-top: 4px;
+}
+
+.smallstat .value {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/**
+ * Multi-Stat Box
+ */
+
+.multi-stat-box {
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    -webkit-box-shadow: 0 1px 0 1px #e4e6eb;
+    -moz-box-shadow: 0 1px 0 1px #e4e6eb;
+    box-shadow: 0 1px 0 1px #e4e6eb;
+    overflow: hidden;
+}
+
+.multi-stat-box .header {
+    font-size: 16px;
+}
+
+.multi-stat-box .header .left {
+    position: relative;
+    background: #1e8fc6;
+    color: white;
+    border-bottom: 1px solid #36a9e1;
+}
+
+.multi-stat-box .left {
+    width: 40%;
+    float: left;
+}
+
+.multi-stat-box .header .left h2 {
+    padding: 10px 10px;
+    margin: 0;
+}
+
+.multi-stat-box .header .left a {
+    text-decoration: none;
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.multi-stat-box .header .right {
+    position: relative;
+    border-bottom: 1px solid #e4e6eb;
+    background: white;
+}
+
+.multi-stat-box .right {
+    width: 60%;
+    float: right;
+}
+
+.multi-stat-box .header .right h2 {
+    padding: 10px 10px;
+    margin: 0;
+}
+
+.multi-stat-box h2, .box h2{
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 300;
+}
+
+.multi-stat-box .header .right .percent {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 8px;
+    border-left: 1px solid #e4e6eb;
+}
+
+.multi-stat-box .content .left {
+    background: #36a9e1;
+    color: white;
+    height: 180px;
+}
+
+.multi-stat-box .content .left ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.multi-stat-box .content .left ul li {
+    padding: 10px 10px;
+    height: 40px;
+}
+
+.multi-stat-box .content .left ul li .date {
+    float: left;
+}
+
+.multi-stat-box .content .left ul li .value {
+    float: right;
+    font-weight: bold;
+}
+
+.multi-stat-box .content .left ul li:hover, .multi-stat-box .content .left ul li.active {
+    background: #219fdd;
+    cursor: pointer;
+}
+
+.multi-stat-box .content .right {
+    background: white;
+    height: 180px;
+}
+
+.multi-stat-box .right {
+    width: 60%;
+    float: right;
+}
+
+/**
+ * Box 
+ */
+.box .box-header h2 {
+    float: left;
+    padding: 10px 0;
+    margin: 0 0 0 20px;
+}
+
+.box {
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    -webkit-box-shadow: 0 1px 0 1px #e4e6eb;
+    -moz-box-shadow: 0 1px 0 1px #e4e6eb;
+    box-shadow: 0 1px 0 1px #e4e6eb;
+    margin: 0 0 30px 0;
+}
+
+.box .box-header {
+    background: #36a9e1;
+    color: white;
+    font-size: 16px;
+    overflow: hidden;
+}
+
+.box .box-header h2 i {
+    background: #1e8fc6;
+    color: white;
+    padding: 10px 0;
+    width: 36px;
+    display: inline-block;
+    text-align: center;
+    margin: -10px 20px -10px -20px;
+}
+
+.box .box-header .box-icon {
+    background: #1e8fc6;
+    float: right;
+}
+
+.box .box-header .box-icon i {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    width: 36px;
+    padding: 10px 0;
+    -webkit-transition: all .1s ease-in-out;
+    -moz-transition: all .1s ease-in-out;
+    -ms-transition: all .1s ease-in-out;
+    -o-transition: all .1s ease-in-out;
+    transition: all .1s ease-in-out;
+    opacity: .8;
+    filter: alpha(opacity=80);
+    -ms-filter: "alpha(opacity=80)";
+    border-left: 1px solid #36a9e1;
+    text-decoration: none;
+}
+
+.box .box-content {
+    padding: 10px;
+    background: white;
+}
+
+.verChart{
+    margin-top:18px;
+}

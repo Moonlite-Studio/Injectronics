@@ -1,11 +1,154 @@
 <template name="projectPage">
-	<div class = "project col-xs-12">
-		<div class="panel panel-default">
-			<div class="panel-body">
-				{{#with currentProject}}
-				{{> projectItem}}
-				{{/with}}
+	{{> breadcrumbs}}
+
+	<div class = "projectData col-xs-12">
+		<div class="row no-margins">
+			<div id="browse-sort" class="clearfix">
+				<a id="name-sorter" data-sort="FILES_BY_NAME" class="sortable-column-header bolded col-xs-6" data-ascending="true" style="cursor: pointer;">
+					<span style="cursor: pointer;">
+						Name
+					</span>
+					<img src="https://dt8kf6553cww8.cloudfront.net/static/images/icons/icon_spacer-vflN3BYt2.gif" style="line-height: 100%; cursor: pointer;" class="sprite sprite_web s_web_sort-uptick-off" alt="">
+				</a>
+				<a id="kind-sorter" data-sort="FILES_BY_KIND" class="sortable-column-header noarrow col-xs-3" data-ascending="false" style="cursor: pointer;">
+					<span id="kind-sorter-label" style="cursor: pointer;">
+						Kind
+					</span>
+					<img src="https://dt8kf6553cww8.cloudfront.net/static/images/icons/icon_spacer-vflN3BYt2.gif" style="line-height: 100%; cursor: pointer;" class="sprite sprite_web s_web_downtick-spacer" alt="">
+				</a>
+				<a id="modified-sorter" data-sort="FILES_BY_MODIFIED" class="sortable-column-header col-xs-3" data-ascending="false" style="cursor: pointer;">
+					<span style="cursor: pointer;">
+						Modified
+					</span>
+					<img src="https://dt8kf6553cww8.cloudfront.net/static/images/icons/icon_spacer-vflN3BYt2.gif" style="line-height: 100%; cursor: pointer;" class="sprite sprite_web s_web_downtick-spacer" alt="">
+				</a>
 			</div>
+
+
+
+			<!-- Folders and Files -->
+
+			<ol id="browse-files" class="mouse-active" style="cursor: default;">
+
+					<li class="browse-file" data-identity="121387510_46753" id="f_121387510_46753" dropzone="copy move">
+
+						<div class="filename-col col-xs-6">
+							<img class="sprite sprite_web s_web_folder_user_32 icon" alt="marks" draggable="true" src="/img/icon_spacer.gif"> <a href="/home/marks" class="filename-link" draggable="true" hidefocus="hideFocus" target="_self">marks</a> 
+						</div>
+
+						<div class="kind col-xs-3"> 
+							<span class="category">folder</span> 
+							<span class="extension secondary"></span> 
+						</div>
+
+						<div class="modified col-xs-3"> 
+							<span class="modified-time">--</span> 
+
+						</div>
+
+						<br class="clear">
+					</li>
+
+					<li class="browse-file" data-identity="121387510_46753" id="f_121387510_46753" dropzone="copy move">
+
+						<div class="filename-col col-xs-6">
+							<img class="sprite sprite_web s_web_folder_user_32 icon" alt="marks" draggable="true" src="/img/icon_spacer.gif"> <a href="/home/marks" class="filename-link" draggable="true" hidefocus="hideFocus" target="_self">marks</a> 
+						</div>
+
+						<div class="kind col-xs-3"> 
+							<span class="category">folder</span> 
+							<span class="extension secondary"></span> 
+						</div>
+
+						<div class="modified col-xs-3"> 
+							<span class="modified-time">--</span> 
+
+						</div>
+
+						<br class="clear">
+					</li>
+
+					<li class="browse-file" data-identity="121387510_46753" id="f_121387510_46753" dropzone="copy move">
+
+						<div class="filename-col col-xs-6">
+							<img class="sprite sprite_web s_web_folder_user_32 icon" alt="marks" draggable="true" src="/img/icon_spacer.gif"> <a href="/home/marks" class="filename-link" draggable="true" hidefocus="hideFocus" target="_self">marks</a> 
+						</div>
+
+						<div class="kind col-xs-3"> 
+							<span class="category">folder</span> 
+							<span class="extension secondary"></span> 
+						</div>
+
+						<div class="modified col-xs-3"> 
+							<span class="modified-time">--</span> 
+
+						</div>
+
+						<br class="clear">
+					</li>
+
+					<li class="browse-file" data-identity="121387510_46753" id="f_121387510_46753" dropzone="copy move">
+
+						<div class="filename-col col-xs-6">
+							<img class="sprite sprite_web s_web_folder_user_32 icon" alt="marks" draggable="true" src="/img/icon_spacer.gif"> <a href="/home/marks" class="filename-link" draggable="true" hidefocus="hideFocus" target="_self">marks</a> 
+						</div>
+
+						<div class="kind col-xs-3"> 
+							<span class="category">folder</span> 
+							<span class="extension secondary"></span> 
+						</div>
+
+						<div class="modified col-xs-3"> 
+							<span class="modified-time">--</span> 
+
+						</div>
+
+						<br class="clear">
+					</li>
+
+					<li class="browse-file" data-identity="121387510_46753" id="f_121387510_46753" dropzone="copy move">
+
+						<div class="filename-col col-xs-6">
+							<img class="sprite sprite_web s_web_folder_user_32 icon" alt="marks" draggable="true" src="/img/icon_spacer.gif"> <a href="/home/marks" class="filename-link" draggable="true" hidefocus="hideFocus" target="_self">marks</a> 
+						</div>
+
+						<div class="kind col-xs-3"> 
+							<span class="category">folder</span> 
+							<span class="extension secondary"></span> 
+						</div>
+
+						<div class="modified col-xs-3"> 
+							<span class="modified-time">--</span> 
+
+						</div>
+
+						<br class="clear">
+					</li>
+
+					<li class="browse-file" data-identity="121387510_46753" id="f_121387510_46753" dropzone="copy move">
+
+						<div class="filename-col col-xs-6">
+							<img class="sprite sprite_web s_web_page_white_text_32 icon" alt="YAML Call.txt" draggable="true" src="/img/icon_spacer.gif">
+							<a href="/home/marks" class="filename-link" draggable="true" hidefocus="hideFocus" target="_self">text.txt</a> 
+						</div>
+
+						<div class="kind col-xs-3"> 
+							<span class="category">document</span> 
+							<span class="extension secondary">txt</span> 
+						</div>
+
+						<div class="modified col-xs-3"> 
+							<span class="modified-time">4/27/2012 11:26 PM</span>
+
+						</div>
+
+						<br class="clear">
+					</li>
+
+			</ol>
+
+
 		</div>
 	</div>
+
 </template>
