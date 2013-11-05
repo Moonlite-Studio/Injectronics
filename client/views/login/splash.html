@@ -1,19 +1,14 @@
 <template name="splash">
 	<div class="splashpage">
-		<div class = 'container splash'>
+		<div class = 'splash'>
 
 
-			<div class = "row pagination-centered text-center">
-				<div class = "col-md-6 hidden-sm hidden-xs">
-					<img src="img/devices.png">	
-				</div>	
+			<div class = "splash-header row pagination-centered">
 
-				<div class = "col-md-6 col-md-offset-0 col-sm-6 col-sm-offset-3 signup">
-					<img class = "logo" src="img/cloud.png">
-					<div class="brandName"><h2>Concloud</h3></div>
-
-
-					<button class="btn btn-lg btn-primary signin" data-toggle="modal" href="#myModal">Sign In</button>
+				<div class="row">
+				<div class = "col-md-6 col-sm-6 signup">
+					<h2><img class = "logo" src="img/cloud.png">
+					<span class="brandName">Concloud</span></h2>
 
 
 					<!-- Modal -->
@@ -147,12 +142,47 @@
 						</div>
 					</div> -->
 				</div>
+
+				<div class="col-span-6">
+					<ul class="splash-nav pull-right nav nav-pills">
+						<li>
+							<a href="#" class="gray">Contact</a>
+						</li>
+						<li>
+							<a href="#" class="gray">History</a>
+						</li>
+						<li>
+							<a href="#" class="gray">F.A.Q.</a>
+						</li>
+						<li>
+							<a href="#" class="nav-callout">Sign In</a>
+						</li>
+					</ul>
+				</div>
 			</div>
+				<div class = "row">
+				<div class="col-xs-7 col-md-5">
+					<div class="header-content">
+						<h1>
+							<small>A better way to</small>
+							<br>Share Information
+						</h1>
+						<p class="subheading">Maintain data in the cloud & witness your collaborations in real-time.</p>
+
+						<button class="btn btn-lg btn-primary signin" data-toggle="modal" href="#myModal">Sign In</button>
+
+						<button class="btn btn-lg btn-default signin">Learn More</button>
+					</div>
+				</div>
+			</div>
+			</div>
+
+
 
 
 				<hr class="featurette-divider">
 
-				<div class="container">
+				<div class="container splash-content">
 					<!--Featurette -->
 					<div class="row featurette">
 						<div class="col-md-7">

@@ -42,17 +42,57 @@ html,body{
  */
  .splashpage {
  	margin-left:0px!important;
- 	text-align:center;
  	margin: 0 auto;
+
+ }
+
+ .splash-nav {
+ 	text-transform: uppercase;
+ 	font-family: "Gotham SSmA", "Gotham SSmB", Helvetica, Arial;
+ 	height: 38px;
+ 	font-size: 14px;
+ 	line-height: 1.6;
+ 	list-style-position: outside;
+ 	direction: ltr;
+ 	margin: 25px 16px;
+ 	padding: 0 15px;
+ }
+
+ .splash-header{
+ 	background-color: #0a0705;
+	background-image: url(/img/workstation.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: top center;
+	padding-bottom: 150px;
+	margin : 0;
+ }
+
+ .splash-nav li a {
+ 	font-size:12px;
+ 	color: #fff;
+ 	font-family: "Gotham SSmA", "Gotham SSmB", Helvetica;
+ 	font-weight: bold;
+ 	text-decoration: none;
+ 	vertical-align: middle;
+ }
+
+ .splash-nav > li > a:hover, .nav-callout {
+ 	background-color:rgba(255,255,255,0.3)!important;
+ }
+
+
+ .splash-content {
+ 	position: relative;
  }
 
  .logo {
  	margin: 0 auto;
  	text-align: center;
+ 	height: 40px;
  }
 
  .signup {
- 	text-align: center;
  }
 
  .signin {
@@ -89,6 +129,7 @@ html,body{
 
  .brandName {
  	margin-bottom:20px;
+ 	 	color:white;
 
  }
 
@@ -98,6 +139,7 @@ html,body{
 
  .brandName h2{
  	font-family: Lato, sans seriff;
+
  }
 
  .thumbnail{
@@ -139,8 +181,39 @@ html,body{
  .miniTitle {
  	color:#999999;
  }
+
+.header-content{
+	margin-top: 160px;
 }
 
+.header-content h1 {
+	color: #fff;
+	display:block;
+	margin-top:0;
+	font-size: 54px;
+	font-family: "Gotham Rounded A", "Gotham Rounded B", Helvetica;
+}
+
+.header-content h1 small {
+	color: #fff;
+	margin-left: 3px;
+	font-size: 26px;
+	letter-spacing : -0.02em;
+	margin-bottom: 25px;
+	line-height: 0;
+}
+
+.header-content h1+.subheading {
+	font-size: 22px;
+	margin-bottom: 55px;
+	color: rgba(255,255,255,0.6);
+	padding-right: 160px;
+	font-family: "Gotham Rounded A", "Gotham Rounded B", Helvetica;
+}
+
+.splash-header > .row {
+	margin-left:20px;
+}
 /**
  * Login Forms
  * @type
@@ -341,26 +414,26 @@ li.browse-file, li.browse-new-folder {
  * Media Queries
  */
 
- @media (min-width: 400px){
+ /*@media (min-width: 400px){
  	.splash{
  		margin-top:25px;
 
  	}
 
- }
+ }*/
 
- @media (min-width: 992px){
+/* @media (min-width: 992px){
  	.splash{
  		margin-top:100px ;
 
  	}
 
- }
+ }*/
 
 
  @media (min-width: 1200px){
  	.splash{
- 		margin-top:200px;
+ 		margin-left:-190px;
 
  	}
 
