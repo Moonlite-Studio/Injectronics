@@ -43,6 +43,7 @@ html,body{
  .splashpage {
  	margin-left:0px!important;
  	margin: 0 auto;
+ 	background-color:white;
 
  }
 
@@ -81,10 +82,6 @@ html,body{
  	background-color:rgba(255,255,255,0.3)!important;
  }
 
-
- .splash-content {
- 	position: relative;
- }
 
  .logo {
  	margin: 0 auto;
@@ -213,6 +210,46 @@ html,body{
 
 .splash-header > .row {
 	margin-left:20px;
+	margin-right:0px;
+}
+
+ .splash-content {
+ 	padding-top:100px;
+ 	background-color:white;
+ }
+
+ .splash-content > .row{
+ 	margin-bottom:85px;
+ 	 margin-left:20px;
+ 	margin-right:20px;
+ }
+
+ .featurette-image {
+ 	width:395px;
+ }
+
+ .featurette-heading {
+ 	font-family: "Gotham Rounded A","Gotham Rounded B",Helvetica,Arial,sans-serif;
+ }
+
+ .lead {
+ 	color: #aaa;
+ }
+
+ @media (min-width: 768px) {
+    .pull-right-md {
+        float: right;
+    }
+}
+
+
+ /**
+  * Footer
+  */
+
+footer {
+	margin-left:20px;
+	margin-right: 20px;
 }
 /**
  * Login Forms
@@ -431,7 +468,7 @@ li.browse-file, li.browse-new-folder {
  }*/
 
 
- @media (min-width: 1200px){
+ @media (min-width: 992px){
  	.splash{
  		margin-left:-190px;
 
