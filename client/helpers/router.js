@@ -17,7 +17,9 @@ Meteor.Router.add({
 	//This page is used for debuging and testing.  Delete before release
 	'/debug': 'debugEntries',
 
-	'/accountManagement' : 'accountManagement'
+	'/accountManagement' : 'accountManagement',
+
+	'/admin' : 'admin'
 
 
 });

@@ -165,8 +165,16 @@ html,body{
  	margin-left:10px;
  }
 
+ .main-chart{
+ 	background-color:white;
+ }
+
  .postContent{
  	margin-top:10px;
+ }
+
+ .admin{
+ 	margin-top:25px;
  }
 
  .userTitle {
