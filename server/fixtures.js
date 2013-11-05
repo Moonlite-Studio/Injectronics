@@ -16,67 +16,36 @@ if (Projects.find().count() === 0) {
     Projects.insert({
         title: 'Concloud Project',
         author: "Travis Scott",
-        description: "A terrific website made by a terrific man",
-        url: "http://www.google.com",
-        authorID: '2',
-        stakeholders: [],
+        description: "A terrific web app made by a terrific man",
+        authorID: 'BXizcEzSJXB33rNir',
         submitted: now,
-        lastUpdated: new Date().getTime(),
-        updateAuthor: "Travis Scott"
+        updates: [{
+            updateDate: new Date().getTime(),
+            updateAuthorName: "Travis Scott",
+            updateAuthorID: "BXizcEzSJXB33rNir"
+        }],
+        recentUpdate: {
+            updateDate: new Date().getTime(),
+            updateAuthorName: "Travis Scott",
+            updateAuthorID: "BXizcEzSJXB33rNir"
+        }
     });
 
         Projects.insert({
-        title: 'Some Other Horrible Project',
+        title: "Project For Dr. Henry's Awesome Course",
         author: "Denny Scott",
-        description: "A Horrible Website made by a Horrible Web Designer",
-        url: "http://heaven.internetarchaeology.org/heaven.html#bottom",
-        authorID: '3',
-        stakeholders: [],
+        description: "A Web Project created for ACS-3909",
+        authorID: 'ifzqdMcRa78c3LWu3',
         submitted: now,
-        lastUpdated: new Date().getTime(),
-        updateAuthor: "Denny Scott"
+        updates: [{
+            updateDate: new Date().getTime(),
+            updateAuthorName: "Denny Scott",
+            updateAuthorID: "ifzqdMcRa78c3LWu3"
+        }],
+        recentUpdate: {
+            updateDate: new Date().getTime(),
+            updateAuthorName: "Denny Scott",
+            updateAuthorID: "ifzqdMcRa78c3LWu3"
+        }
     });
 }
-/*
-if (Entries.find().count() === 0){
-    var now = new Date().getTime();
-
-    var artId = Meteor.users.insert({
-        profile: { name: 'Art Vandelay' }
-    });
-
-    Entries.insert({
-        name: 'Art Vandelay',
-        uId : artId,
-        submitted: now,
-        description: "Uploaded info about the addition to the guggenheimer. You know it didn't really take that long.",
-        projectId: "3YgGrTC7TrL65pgxs"
-    });
-
-    Entries.insert({
-        name: 'Denny Scott',
-        uId : artId,
-        submitted: now,
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. ",
-        projectId: "3YgGrTC7TrL65pgxs"
-    });
-
-    Entries.insert({
-        name: 'Travis Scott',
-        uId : artId,
-        submitted: now,
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. ",
-        projectId: "3YgGrTC7TrL65pgxs"
-    });
-
-    Entries.insert({
-        name: 'Kevin MacKay',
-        uId : artId,
-        submitted: now,
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. ",
-        projectId: "3YgGrTC7TrL65pgxs"
-    });
-    
-}
-
-*/

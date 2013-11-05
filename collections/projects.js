@@ -20,21 +20,21 @@ Meteor.methods({
 			throw new Meteor.Error(422, 'Error 422: Project must have a title');
 		}
 
-		//Checks to see if this project has already been created
-		if (projectAttributes.url && projectWithSameLink){
-			throw new Meteor.Error(302, 'This link has already been posted', projectWithSameLink._id);
-		}
-
 		//filling in other keys
 		var proj = _.extend(_.pick(projectAttributes, 'title', 'description'), {
 			authorID: user._id,
 			authorName: user.profile.name,
 			submitted: new Date().getTime(),
-			update: [{
+			updates: [{
 				updateDate: new Date().getTime(),
 				updateAuthorName: user.profile.name,
 				updateAuthorID: user._id
-			}]
+			}],
+			recentUpdate: {
+				updateDate: new Date().getTime(),
+				updateAuthorName: user.profile.name,
+				updateAuthorID: user._id
+			}
 			//NEED TO FILL IN DATA FOR HOLDING ACTUAL DOCUMENTS!!
 		});
 
@@ -52,11 +52,18 @@ Meteor.methods({
 	 * @return void    Returns nothing
 	 */
 	updateProject: function(id){
-		user = Meteor.user();
+		var user = Meteor.user();
 
 		var project = Projects.findOne(id);
+		var update = {
+				updateDate: new Date().getTime(),
+				updateAuthorName: user.profile.name,
+				updateAuthorID: user._id
+			};
 
-		Projects.update(id, { $set: {"lastUpdated" : new Date().getTime()}});
-		Projects.update(id, { $set: {"updateAuthor" : user.profile.name}});
+		Projects.update(id, {$addToSet: {updates: update}});
+		Projects.update(id, {$set : {recentUpdate: update}});
+		//project.updates.unshift(update);
+		createProjectNotification(project);
 	}
 });

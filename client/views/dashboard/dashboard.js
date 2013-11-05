@@ -6,8 +6,8 @@ Template.dashboard.helpers({
 	 * @return Array Contains objects of entries to be posted to the dashboard
 	 */
 	entry: function () {
-		var subscriptions = Meteor.user().profile.subscriptions;
-		var projects = Projects.find({}, {sort: {lastUpdated: -1}}).fetch();
+		var projects = Projects.find({}, {sort: {"recentUpdate.updateDate" : -1}}).fetch();
+		var user = Meteor.user();
 		var TWELVE_HOURS = 12* 60 * 60 * 1000; /* ms */
 
 		var entries = [];
@@ -16,13 +16,12 @@ Template.dashboard.helpers({
 		//matches it it will push it to the entries array
 		$.each(projects, function(index, project){
 			//If the found project is subscribed to
-			if(subscriptions.indexOf(project._id) !== -1){
-
+			if(Subscriptions.findOne({userID: user._id , projectID: project._id})){
 				entries.push({
 					name: project.title,
 					description: "This project has been recently updated.",
-					submitted: project.lastUpdated,
-					author: project.updateAuthor,
+					submitted: project.recentUpdate.updateDate,
+					author: project.recentUpdate.updateAuthorName,
 					projectId: project._id,
 					type: "project"
 				});
@@ -33,8 +32,8 @@ Template.dashboard.helpers({
 				entries.push({
 					name: project.title,
 					description: "This is a new project that has just been made.  Perhaps you would like to subscribe to it?",
-					submitted: project.lastUpdated,
-					author: project.updateAuthor,
+					submitted: project.recentUpdate.updateDate,
+					author: project.recentUpdate.updateAuthorName,
 					projectId: project._id,
 					type: "project"
 				});

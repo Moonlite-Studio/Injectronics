@@ -4,10 +4,9 @@ Template.projectItem.events({
 	 * @return void
 	 */
 	'click #subscribeButton': function () {
-
-		var subs = Meteor.user().profile.subscriptions;
-		if(subs.indexOf(this._id) === -1){
-			Meteor.call('addSubscription', this._id, function (error, result) {
+		var user = Meteor.user();
+		if(!Subscriptions.findOne({userID: user._id, projectID: this._id})){
+			Meteor.call('subscription', this._id, function (error, result) {
 			});
 		}else{
 			Meteor.call('removeSubscription', this._id, function (error, result) {
@@ -33,12 +32,16 @@ Template.projectItem.helpers({
 	projectId: function () {
 		return this._id;
 	},
+	convertedTime: function () {
+		return new Date(this.recentUpdate.updateDate).toString();
+	},
 	/**
 	 * Used to change the text of the button to correspond to the sunscription of the project
 	 * @return String The text for the button
 	 */
 	projectSubscribed: function(){
-		if(Meteor.user().profile.subscriptions.indexOf(this._id) !== -1){
+		var user = Meteor.user();
+		if(Subscriptions.findOne({userID: user._id, projectID: this._id})){
 			return "Subscribed!";
 		}else{
 			return "Click to Subscribe";
@@ -49,7 +52,8 @@ Template.projectItem.helpers({
 	 * @return String contains the new class to be inserted into the button
 	 */
 	btnSubscribed: function(){
-		if(Meteor.user().profile.subscriptions.indexOf(this._id) !== -1){
+		var user = Meteor.user();
+		if(Subscriptions.findOne({userID: user._id, projectID: this._id})){
 			return "btn-success";
 		}else{
 			return "btn-danger";

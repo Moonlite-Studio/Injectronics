@@ -12,11 +12,13 @@ Template.dashboardEntry.helpers({
  * @return boolean returns true if the current entry is in the user subscription table
  */
 	userSubscribe: function() {
-		if (Meteor.user().profile.subscriptions.indexOf(this.projectId) != -1){
-			return true;
-		}	else {
-			return false;
-		}
+		var foundItem = Subscriptions.findOne({userID: Meteor.userId(), projectID: this.projectId});
+				
+			if (foundItem) {
+				return true;
+			} else {
+				return false;
+			}
 	},
 
 	getAvatar: function (){
@@ -32,7 +34,6 @@ Template.dashboardEntry.events({
 	 * @return void
 	 */
 	'click #unsubscribe': function () {
-		console.log("unsubscribe");
 		Meteor.call('removeSubscription', this.projectId, function (error, result){});
 	},
 	/**
@@ -40,6 +41,6 @@ Template.dashboardEntry.events({
 	 * @return void
 	 */
 	'click #subscribe' : function () {
-		Meteor.call('addSubscription', this.projectId, function (error, result) {});
+		Meteor.call('subscription', this.projectId, function (error, result) {});
 	}
 });

@@ -4,6 +4,6 @@ Template.projectsList.helpers({
 	 * @return collection All projects in collection
 	 */
 	projects: function() {
-		return Projects.find({}, {sort: {lastUpdated: -1}});
+		return Projects.find({}, {sort: {"recentUpdate.updateDate" : -1}});
 	}
 });

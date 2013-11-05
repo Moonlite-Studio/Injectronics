@@ -80,7 +80,6 @@ Template.splash.events({
 			profile : {
 				name : ($('#sign-first-name').val() + " " + $('#sign-last-name').val()),
 				templateCode : $('#sign-template-code').val(),
-				subscriptions: [],
 				joinDate: time,
 				recent: {
 					lastLogin: time,
