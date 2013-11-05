@@ -224,8 +224,8 @@ html,body{
 	-moz-box-shadow: 0 1px 1px rgba(0,0,0,0.12),inset 0 0 0 #000;
 	-webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.12),inset 0 0 0 #000;
 	box-shadow: 0 1px 1px rgba(0,0,0,0.12),inset 0 0 0 #000;
-	border-top: 1px solid #82cffa;
-	border-bottom: 1px solid #96c4ea;
+	border-top: 1px solid #cccccc;
+	border-bottom: 1px solid #cccccc;
 	border-left: 1px solid #e7f2fb;
 	border-right: 1px solid #e7f2fb;
 	background: #f0f9ff url(/static/images/white_pixel-vfltEkXBV.gif) repeat-x;
@@ -233,16 +233,15 @@ html,body{
 #browse-sort, #browse-root-actions, #browse-global-actions-bar {
 	line-height: 29px;
 	padding: 3px 6px;
-	height: 29px;
 }
 
 .sortable-column-header {
 	margin-bottom: 0px;
-	font-size: 13px;
+	font-size: 14px;
 }
 
 .bolded {
-	font-weight: 600;
+	font-weight: bold;
 }
 
 #browse-files {
@@ -314,6 +313,28 @@ li.browse-file, li.browse-new-folder {
 	margin-left: 6px;
 }
 
+.projectData .no-margins{
+	margin-left:15px;
+	margin-right:15px;
+}
+
+.s_web_sort-uptick-off {
+	background-position: left -11052px;
+	width: 9px;
+	height: 9px;
+}
+
+.s_web_downtick-spacer {
+	background-position: left -4132px;
+	width: 11px;
+	height: 11px;
+}
+
+.s_web_page_white_text_32 {
+	background-position: left -1155px;
+	width: 32px;
+	height: 32px;
+}
 
 
 /**
