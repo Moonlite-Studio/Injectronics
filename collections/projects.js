@@ -54,6 +54,7 @@ Meteor.methods({
 		var user = Meteor.user();
 
 		var project = Projects.findOne(id);
+		Meteor.users.update({_id: Meteor.userId()}, {$set : {'profile.recent.lastProjectID' : id, 'profile.recent.lastProjectName' : project.title } });
 		var update = {
 				updateDate: new Date().getTime(),
 				updateAuthorName: user.profile.name,
@@ -62,7 +63,6 @@ Meteor.methods({
 
 		Projects.update(id, {$addToSet: {updates: update}});
 		Projects.update(id, {$set : {recentUpdate: update}});
-		//project.updates.unshift(update);
 		createProjectNotification(project);
 	}
 });

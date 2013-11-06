@@ -44,15 +44,27 @@ Template.dashboard.helpers({
 	},
 
 	lastLogin : function() {
-		var lastLogin = Meteor.user().profile.lastLogin;
+		var lastLogin = Meteor.user().profile.recent.lastLogin;
 
 		if(lastLogin === undefined || lastLogin === null)
 			return 'First Time';
 		return formatDate(lastLogin);
 	},
 
+	isProject : function(){
+		var lastProject = Meteor.user().profile.recent.lastProjectID;
+		if(lastProject === undefined || lastProject === null){
+			return false;
+		}
+		return true;
+	},
+
+	lastProjectID : function() {
+		return Meteor.user().profile.recent.lastProjectID;
+	},
+
 	lastProject : function() {
-		var lastProject = Meteor.user().profile.lastProject;
+		var lastProject = Meteor.user().profile.recent.lastProjectName;
 
 		if(lastProject === undefined || lastProject === null)
 			return 'No Project';

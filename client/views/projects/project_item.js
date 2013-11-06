@@ -6,7 +6,7 @@ Template.projectItem.events({
 	'click #subscribeButton': function () {
 		var user = Meteor.user();
 		if(!Subscriptions.findOne({userID: user._id, projectID: this._id})){
-			Meteor.call('subscription', this._id, function (error, result) {
+			Meteor.call('subscription', this, function (error, result) {
 			});
 		}else{
 			Meteor.call('removeSubscription', this._id, function (error, result) {

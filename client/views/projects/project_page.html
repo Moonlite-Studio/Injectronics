@@ -1,8 +1,9 @@
 <template name="projectPage">
 	{{> breadcrumbs}}
-
+	{{#with currentProject}}
 	<div class = "projectData col-xs-12">
 		<div class="row no-margins">
+			<h3>{{title}}</h3>
 			<div id="browse-sort" class="clearfix">
 				<a id="name-sorter" data-sort="FILES_BY_NAME" class="sortable-column-header bolded col-xs-6" data-ascending="true" style="cursor: pointer;">
 					<span style="cursor: pointer;">
@@ -150,5 +151,5 @@
 
 		</div>
 	</div>
-
+	{{/with}}
 </template>

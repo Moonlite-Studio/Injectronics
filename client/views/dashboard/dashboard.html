@@ -22,7 +22,16 @@
 						<hr>
 						<h6 class="userTitle">Previous Work</h6>
 						<div><span class="miniTitle">Last Login:</span> {{lastLogin}}</div>
-						<div><span class="miniTitle">Last Project:</span> {{lastProject}}</div>
+						<div>
+							<span class="miniTitle">Last Project:</span>
+							{{#if isProject}}
+								<a href = "{{projectPagePath lastProjectID}}"> 
+							{{/if}}
+							{{lastProject}}
+							{{#if isProject}}
+								</a> 
+							{{/if}}
+						</div>
 						<hr>
 						<h6 class="userTitle">H.R. Info</h6>
 						<div><span class="miniTitle">Sick Days Reminaing:</span> {{sickDays}}</div>

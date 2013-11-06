@@ -44,7 +44,7 @@ Template.dashboardEntry.events({
 	 * @return void
 	 */
 	'click #subscribe' : function () {
-		Meteor.call('subscription', this.projectId, function (error, result) {});
+		Meteor.call('subscription', this, function (error, result) {});
 	}
 });
 

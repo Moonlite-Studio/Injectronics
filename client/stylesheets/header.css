@@ -1,3 +1,17 @@
 #search-field{
 	width: 200px;
 }
+
+.fa-check{
+	margin-top: 4%;
+}
+
+#readAll{
+	margin-top: 4%;
+	color: black;
+}
+
+#readAll:hover{
+	color: #1010ff;
+	cursor: pointer;
+}

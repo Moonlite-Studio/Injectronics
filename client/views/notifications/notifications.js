@@ -14,3 +14,12 @@ Template.notifications.helpers({
     return Notifications.find({userID: Meteor.userId(), read: false}).count();
   }
 });
+
+Template.notifications.events({
+  'click #readAll': function () {
+    var notifications = Notifications.find({userID: Meteor.userId(), read: false});
+    notifications.forEach(function (post) {
+      Notifications.update(post._id, {$set: {read: true}});
+    });
+  }
+});
