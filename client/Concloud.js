@@ -15,9 +15,3 @@ Template.concloud.rendered = function () {
     s.parentNode.insertBefore(wf, s);
   })(); 
 };
-
-Template.concloud.events({
-  'click #clickme': function () {
-      
-  }
-});
