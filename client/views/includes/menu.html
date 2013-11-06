@@ -62,13 +62,9 @@
 				</a>
 <!--CREATE TEMPLATE HERE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
 				<ul class="submenu">
+
 					{{#each projects}}
-						<li>
-							<a href="/projects/{{projectID}}">
-								<i class="fa fa-angle-double-right"></i>
-								{{projectName}}
-							</a>
-						</li>
+						{{> sidebarProject}}
 					{{/each}}
 
 				</ul>

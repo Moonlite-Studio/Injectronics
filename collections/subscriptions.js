@@ -17,7 +17,7 @@ Meteor.methods({
 		var sub = {
 			userID : user._id,
 			projectID : proj._id,
-			projectName: proj._title
+			projectName: proj.title
 
 		};
 
