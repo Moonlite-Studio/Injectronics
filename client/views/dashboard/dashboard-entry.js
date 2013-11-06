@@ -4,7 +4,7 @@ Template.dashboardEntry.helpers({
 	 * @return String containing english readable time
 	 */
 	convertedTime: function () {
-		return new Date(this.submitted).toString();
+		return formatDate(this.submitted);
 	},
 
 /**

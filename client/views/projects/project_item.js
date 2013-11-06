@@ -33,7 +33,7 @@ Template.projectItem.helpers({
 		return this._id;
 	},
 	convertedTime: function () {
-		return new Date(this.recentUpdate.updateDate).toString();
+		return formatDate(this.recentUpdate.updateDate);
 	},
 	/**
 	 * Used to change the text of the button to correspond to the sunscription of the project

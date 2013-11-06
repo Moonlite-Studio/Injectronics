@@ -42,5 +42,39 @@ Template.dashboard.helpers({
 
 
 		return entries;
+	},
+
+	userName : function() {
+		return Meteor.user().profile.name;
+	},
+
+	joinDate : function() {
+		return formatDate(Meteor.user().profile.joinDate);
+	},
+
+	lastLogin : function() {
+		var lastLogin = Meteor.user().profile.lastLogin;
+
+		if(lastLogin === undefined || lastLogin === null)
+			return 'First Time';
+		return formatDate(lastLogin);
+	},
+
+	lastProject : function() {
+		var lastProject = Meteor.user().profile.lastProject;
+
+		if(lastProject === undefined || lastProject === null)
+			return 'No Project';
+		return lastProject;
+	},
+
+	sickDays : function() {
+		return Meteor.user().profile.hr.sickDays;
+	},
+
+	vacationDays : function() {
+		return Meteor.user().profile.hr.vacationDays;
 	}
+
+
 });
