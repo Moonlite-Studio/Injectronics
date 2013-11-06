@@ -16,7 +16,7 @@ if (Projects.find().count() === 0) {
 //Insert fake project data
     Projects.insert({
         title: 'Concloud Project',
-        author: "Travis Scott",
+        authorName: "Travis Scott",
         description: "A terrific web app made by a terrific man",
         authorID: 'BXizcEzSJXB33rNir',
         submitted: now,
@@ -35,7 +35,7 @@ if (Projects.find().count() === 0) {
 //inserts fake project data
         Projects.insert({
         title: "Project For Dr. Henry's Awesome Course",
-        author: "Denny Scott",
+        authorName: "Denny Scott",
         description: "A Web Project created for ACS-3909",
         authorID: 'ifzqdMcRa78c3LWu3',
         submitted: now,

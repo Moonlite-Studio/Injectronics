@@ -12,15 +12,6 @@ Template.projectItem.events({
 			Meteor.call('removeSubscription', this._id, function (error, result) {
 			});
 		}
-	},
-
-	/**
-	 * Used to update the project
-	 * @return void
-	 */
-	'click #updateButton' : function () {
-		Meteor.call('updateProject', this._id, function (error, result) {
-		});
 	}
 });
 

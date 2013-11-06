@@ -9,3 +9,7 @@
   position:relative;
   transition:all 300ms 0ms ease-in;
 }
+
+#update-btn{
+	margin-top: 20px;
+}
