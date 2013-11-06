@@ -26,8 +26,7 @@ Meteor.methods({
 			authorName: user.profile.name,
 			submitted: new Date().getTime(),
 			updates: [{
-				updateDate: new Date().getTime(),
-				updateAuthorName: user.profile.name,
+				updateDate: new Date().getTime(),				updateAuthorName: user.profile.name,
 				updateAuthorID: user._id
 			}],
 			recentUpdate: {

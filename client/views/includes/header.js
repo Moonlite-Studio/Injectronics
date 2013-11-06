@@ -1,12 +1,18 @@
 Template.header.events({
-	//Used for when the user clicks the log out button
+	/**
+	 * Logs the user out on click
+	 * @return void
+	 */
 	'click #logout-btn' : function(){
 		Meteor.logout();
 	}
 });
 
 Template.header.helpers({
-	//Used to get the first name of the current user
+	/**
+	 * Gets the first name of the current user
+	 * @return String String value of first name
+	 */
 	'currentName' : function(){
 		return Meteor.user().profile.name.split(" ")[0];
 	}

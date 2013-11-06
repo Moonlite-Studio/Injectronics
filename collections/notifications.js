@@ -6,6 +6,11 @@ Notifications.allow({
 });
 **/
 
+/**
+ * Creates a project notification and places it in the notifications collection
+ * @param  Project project A project that has been updated
+ * @return void
+ */
 createProjectNotification = function(project) {
   var user = Meteor.user();
   var projectSubs = Subscriptions.find({projectID: project._id});

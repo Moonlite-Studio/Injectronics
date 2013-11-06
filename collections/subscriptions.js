@@ -2,7 +2,12 @@ Subscriptions = new Meteor.Collection('subscriptions');
 
 Meteor.methods({
 
-	subscription: function(projID){
+/**
+ * Creates a subscrition linking a user and project
+ * @param  String proj The project to be subscribed to
+ * @return String  The new subscription ID
+ */
+	subscription: function(proj){
 		var user = Meteor.user();
 		var subCheck = Subscriptions.findOne({userID: user._id, projectID: projID});
 		if(subCheck){
@@ -11,7 +16,8 @@ Meteor.methods({
 		//filling in other keys
 		var sub = {
 			userID : user._id,
-			projectID : projID
+			projectID : proj._id,
+			projectName: proj_title
 
 		};
 
@@ -22,7 +28,11 @@ Meteor.methods({
 		return subID;
 	},
 
-	
+	/**
+	 * Removes a subscription from the subscription table
+	 * @param  String projID The ID of the projec to be removed from the subscription
+	 * @return void
+	 */
 	removeSubscription: function(projID){
 		var user = Meteor.user();
 		var sub = {

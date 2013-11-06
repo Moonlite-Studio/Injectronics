@@ -13,6 +13,7 @@ if (Projects.find().count() === 0) {
     });
 
 
+//Insert fake project data
     Projects.insert({
         title: 'Concloud Project',
         author: "Travis Scott",
@@ -31,6 +32,7 @@ if (Projects.find().count() === 0) {
         }
     });
 
+//inserts fake project data
         Projects.insert({
         title: "Project For Dr. Henry's Awesome Course",
         author: "Denny Scott",
