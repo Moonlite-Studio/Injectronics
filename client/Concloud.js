@@ -1,5 +1,6 @@
 Template.concloud.rendered = function () {
 	jqueryui();
+  metroNotifications();
 
 	 WebFontConfig = {
     google: { families: [ 'Lato:400,700,900,400italic:latin' ] }
@@ -14,3 +15,9 @@ Template.concloud.rendered = function () {
     s.parentNode.insertBefore(wf, s);
   })(); 
 };
+
+Template.concloud.events({
+  'click #clickme': function () {
+      
+  }
+});
