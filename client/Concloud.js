@@ -1,5 +1,6 @@
 Template.concloud.rendered = function () {
 	jqueryui();
+  metroNotifications();
 
 	 WebFontConfig = {
     google: { families: [ 'Lato:400,700,900,400italic:latin' ] }

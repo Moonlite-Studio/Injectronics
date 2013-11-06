@@ -4,7 +4,7 @@ Template.dashboardEntry.helpers({
 	 * @return String containing english readable time
 	 */
 	convertedTime: function () {
-		return new Date(this.submitted).toString();
+		return formatDate(this.submitted);
 	},
 
 /**
@@ -23,7 +23,10 @@ Template.dashboardEntry.helpers({
 
 	getAvatar: function (){
 		if(this.type === "project"){
-			return "img/";
+			return "img/project.png";
+		}
+		else{
+			return "img/avatar.png";
 		}
 	}
 });

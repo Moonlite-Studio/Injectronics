@@ -62,48 +62,15 @@
 				</a>
 <!--CREATE TEMPLATE HERE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
 				<ul class="submenu">
-					<li>
-						<a href="#">
-							<i class="fa fa-angle-double-right"></i>
-							Project One
-						</a>
-					</li>
+					{{#each projects}}
+						<li>
+							<a href="/projects/{{projectID}}">
+								<i class="fa fa-angle-double-right"></i>
+								{{projectName}}
+							</a>
+						</li>
+					{{/each}}
 
-					<li>
-						<a href="#">
-							<i class="fa fa-angle-double-right"></i>
-							Project Two
-						</a>
-					</li>
-
-					<li>
-						<a href="#">
-							<i class="fa fa-angle-double-right"></i>
-							Project Three
-						</a>
-					</li>
-
-					<li>
-						<a href="#">
-							<i class="fa fa-angle-double-right"></i>
-							Project Four
-						</a>
-					</li>
-
-					<li>
-						<a href="#">
-							<i class="fa fa-angle-double-right"></i>
-							Project Five
-						</a>
-					</li>
-
-					<li>
-						<a href="#" class="dropdown-toggle">
-							<i class="fa fa-angle-double-right"></i>
-
-							Project Six
-						</a>
-					</li>
 				</ul>
 			</li>
 
