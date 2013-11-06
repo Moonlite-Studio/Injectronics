@@ -55,19 +55,11 @@ html,body{
  	line-height: 1.6;
  	list-style-position: outside;
  	direction: ltr;
- 	margin: 25px 16px;
+ 	margin: 15px 16px;
  	padding: 0 15px;
  }
 
- .splash-header{
- 	background-color: #0a0705;
-	background-image: url(/img/workstation.jpg);
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: top center;
-	padding-bottom: 150px;
-	margin : 0;
- }
+
 
  .splash-nav li a {
  	font-size:12px;
@@ -252,6 +244,108 @@ html,body{
 
 .submitSignIn, .forgotPassword{
 	text-align: center;
+}
+
+ .splash-header{
+ 	background-color: #0a0705;
+	background-image: url(/img/workstation.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: top center;
+	margin : 0;
+	padding-bottom: 150px;
+ }
+
+ @media only screen and (max-width: 768px) {
+     .splash-header{
+	 	background-color: #0a0705;
+		background-image: url(/img/darkPattern.png);
+		padding-bottom: 45px;
+
+ }
+
+	 .header-content h1{
+	 	font-size: 32px;
+	 }
+
+	 .header-content h1 small {
+	 	font-size: 20px;
+	 	margin-bottom: 16px;
+	 }
+
+	h1+.subheading, .header-content h1+.subheading{
+		font-size:19px;
+	}
+
+	.navbar-toggle {
+		margin-top:15px;
+	}
+
+	.splash-nav {
+		height : auto;
+	}
+
+	.header-content{
+		margin-top:20px;
+	}
+
+}
+
+@media only screen and (max-device-width: 768px) {
+     .splash-header{
+	 	background-color: #0a0705;
+		background-image: url(/img/darkPattern.png);
+		padding-bottom: 45px;
+
+ }
+
+	 .header-content h1{
+	 	font-size: 32px;
+	 }
+
+	 .header-content h1 small {
+	 	font-size: 20px;
+	 	margin-bottom: 16px;
+	 }
+
+	h1+.subheading, .header-content h1+.subheading{
+		font-size:19px;
+	}
+
+	.navbar-toggle {
+		margin-top:15px;
+	}
+
+	.splash-nav {
+		height : auto;
+	}
+
+	.header-content{
+		margin-top:20px;
+	}
+
+}
+
+.header-content .btn-learn {
+	background-color: #CCCCCC!important;
+}
+
+.splash-header .navbar {
+	position: relative;
+z-index: 1000;
+min-height: 50px;
+margin-bottom: 20px;
+border: 1px solid transparent;
+background : transparent;
+color:white;
+}
+
+.navbar-toggle {
+	color:white;
+}
+
+.icon-bar {
+	color:white;
 }
 
 

@@ -140,7 +140,7 @@
     float: right;
     position: fixed;
     width: 430px;
-    right: 10px;
+    right: 8px;
     bottom: 180px;
     z-index: 9999;
 
@@ -174,7 +174,7 @@
 .cajita img{
     width: 23px;
     height: 23px;
-    padding-left: 3px;
+    padding-left: 5px;
     padding-top: 3px;
 }
 
