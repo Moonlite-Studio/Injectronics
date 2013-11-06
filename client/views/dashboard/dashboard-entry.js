@@ -23,7 +23,10 @@ Template.dashboardEntry.helpers({
 
 	getAvatar: function (){
 		if(this.type === "project"){
-			return "img/";
+			return "img/project.png";
+		}
+		else{
+			return "img/avatar.png";
 		}
 	}
 });

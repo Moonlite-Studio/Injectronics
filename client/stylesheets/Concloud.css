@@ -541,5 +541,24 @@ li.browse-file, li.browse-new-folder {
  	}
  }
 
+ .projectBox {
+ 	float: left;
+ 	width:50px;
+ 	height:50px;
+ 	margin-left:10px;
+ 	background-color: #87b87f!important;
+	border-color: #87b87f;
+	text-align : center;
+	color:#fff!important;
+	text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
+	white-space: nowrap;
+	vertical-align: middle;
+ }
+
+ .projectBox > h3 {
+ 	margin : 0;
+ 	margin-top:12px;
+ }
+
 
 
