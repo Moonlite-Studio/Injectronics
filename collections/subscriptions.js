@@ -7,7 +7,7 @@ Meteor.methods({
  * @param  String proj The project to be subscribed to
  * @return String  The new subscription ID
  */
-	subscription: function(proj){
+	subscription: function(projID){
 		var user = Meteor.user();
 		var subCheck = Subscriptions.findOne({userID: user._id, projectID: projID});
 		if(subCheck){
@@ -16,8 +16,7 @@ Meteor.methods({
 		//filling in other keys
 		var sub = {
 			userID : user._id,
-			projectID : proj._id,
-			projectName: proj_title
+			projectID : projID
 
 		};
 

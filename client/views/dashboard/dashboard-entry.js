@@ -49,7 +49,6 @@ Template.dashboardEntry.rendered = function(){
   // animate post from previous position to new position
   var instance = this;
   var rank = instance.data._rank;
-    console.log(instance.data._rank);
   var $this = $(this.firstNode);
   var postHeight = 80;
   var newPosition = rank * postHeight;
