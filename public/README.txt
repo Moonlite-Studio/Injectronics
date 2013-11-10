@@ -1,1 +1,0 @@
-Delete this file after a public file has been made, it is only here to hold sile structure integrity for git
