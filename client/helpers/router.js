@@ -4,6 +4,10 @@ Meteor.Router.add({
 	'/': "dashboard",
 
 	'/projects' : 'projectsList',
+
+	'/about' : 'about',
+
+	'/contactus' : 'contactUs',
 	
 	//Routes to individual project pages
 	'/projects/:_id' : {
@@ -34,5 +38,27 @@ Meteor.Router.filters({
             return 'splash';
     }
 });
+
+
 Meteor
-.Router.filter('requireLogin', {except: 'splash'});
+.Router.filter('requireLogin', {except: ['splash','about','contactUs']});
+
+/**
+ * Creates a global function to search for the current URL. This will be used
+ * to determine which navbar <li> will be active.
+ * @return String the url
+ */
+curPath = function() {
+	c=window.location.pathname;
+	var b=c.slice(0,-1);
+	var a=c.slice(-1);
+	if(b===""){
+		return"/";
+	}else{
+		if(a=="/"){
+			return b;
+		}else{
+			return c;
+		}
+	}
+};

@@ -1,0 +1,19 @@
+.section_header {
+  width: 100%;
+  margin-bottom: 60px; 
+}
+  
+.section_header h3 {
+    color: #646464;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 27px;
+    border-bottom: 1px solid #b3b3b3;
+    padding-bottom: 0px;
+    display: inline-block;
+    margin: 0; 
+  }
+
+.splash-navbar {
+  background-color: transparent;
+}

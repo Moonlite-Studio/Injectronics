@@ -1,0 +1,15 @@
+.splash-content {
+ 	padding-top:100px;
+ 	padding-bottom: 100px;
+ 	background-color:white;
+ }
+
+ .splash-content > .row{
+ 	margin-bottom:85px;
+ 	 margin-left:20px;
+ 	margin-right:20px;
+ }
+
+ .splash .row {
+ 	margin:0;
+ }

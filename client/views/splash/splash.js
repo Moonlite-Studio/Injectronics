@@ -113,6 +113,8 @@ Template.splash.events({
 
 //Hides the dimmed effect
 Template.splash.rendered = function () {
+	theme();
+
 	$('#effect').hide();
 
 	//The Modal Wrapper (Includes all forms);

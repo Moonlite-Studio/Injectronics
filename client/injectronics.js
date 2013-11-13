@@ -1,4 +1,4 @@
-Template.concloud.rendered = function () {
+Template.injectronics.rendered = function () {
 	jqueryui();
   metroNotifications();
 

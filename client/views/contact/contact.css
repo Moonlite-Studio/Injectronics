@@ -1,0 +1,132 @@
+.contactUsPage {
+	margin-left: -190px;
+}
+
+.contactUs {
+	margin-bottom: 90px;
+  	margin-top: 70px; 
+}
+
+.contained{
+	background: #fff;
+	padding:30px 15px;
+	position:relative;
+	webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-box-shadow: 0 1px 0 0 rgba(0,0,0,0.1);
+	-moz-box-shadow: 0 1px 0 0 rgba(0,0,0,0.1);
+	box-shadow: 0 1px 0 0 rgba(0,0,0,0.1);
+}
+
+.secondary-heading {
+	position: relative;
+	padding-bottom: 20px;
+	clear:both;
+}
+
+.contained .secondary-heading h1{
+	color:#384047;
+	font-size: 1.8em;
+	font-weight:bold;
+	line-height:1.2;
+}
+
+.form-item {
+	position: relative;
+	margin-bottom: 15px;
+}
+
+.form-item label {
+	position: absolute;
+	top: 8px;
+	right: 15px;
+	left: 19px;
+	line-height: 1.3;
+	margin: 0;
+	font-size: 1.4em;
+	white-space: nowrap;
+	cursor: text;
+	color: #b2bac2;
+	z-index: 5;
+	overflow: hidden;
+	font-weight: normal;
+}
+
+
+
+.contactUs input.text, .contactUs input.email, .contactUs input.password, 
+.contactUs textarea.form-element, .contactUs input[type='text'], 
+.contactUs input[type='email'], .contactUs input[type='password'], .area_control {
+	background: #e8ebed;
+	margin: 0;
+	color: #8d9aa5;
+	width: 100%;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	padding: 5px 15px 5px;
+	outline: 0;
+	-webkit-appearance: none;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-box-shadow: 0;
+	-moz-box-shadow: 0;
+	box-shadow: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.contactUs input.text:focus, .contactUs input.email:focus, .contactUs input.password:focus, 
+.contactUs textarea.form-element:focus, .contactUs input[type='text']:focus, 
+.contactUs input[type='email']:focus, .contactUs input[type='password']:focus, .area_control:focus {
+	background-color:white;
+}
+
+input, select {
+	vertical-align: middle;
+}
+
+.contact_info{
+	color: #8d9aa5;
+}
+
+.contact_info p {
+	line-height: 1.4;
+	color: #8d9aa5;
+	margin-bottom: 15px;
+}
+
+.boldedEmail {
+	font-weight: bold;
+}
+
+.contactUs .module {
+	margin-bottom: 50px;
+}
+
+.contained .secondary-module .secondary-heading {
+	padding-bottom:15px;
+}
+
+.secondary-module .icon-forum {
+	filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30);
+	opacity: 0.3;
+}
+
+.secondary-heading h3 {
+	font-size: 16px!important;
+}
+
+.secondary-module p a {
+	font-weight: bold;
+	color: #8d9aa5;
+}
+
+.submit_value{
+	margin-top:20px;
+}
