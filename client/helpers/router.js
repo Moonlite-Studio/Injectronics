@@ -8,6 +8,8 @@ Meteor.Router.add({
 	'/about' : 'about',
 
 	'/contactus' : 'contactUs',
+
+	'/prices' : 'prices',
 	
 	//Routes to individual project pages
 	'/projects/:_id' : {
@@ -41,7 +43,7 @@ Meteor.Router.filters({
 
 
 Meteor
-.Router.filter('requireLogin', {except: ['splash','about','contactUs']});
+.Router.filter('requireLogin', {except: ['splash','about','contactUs','prices']});
 
 /**
  * Creates a global function to search for the current URL. This will be used

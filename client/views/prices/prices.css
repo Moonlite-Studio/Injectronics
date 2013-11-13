@@ -1,0 +1,246 @@
+.pricesPage {
+	margin-left: -190px;
+}
+
+.pricesPage .header {
+	margin-top:100px;
+
+}
+
+.pricesPage .fullHeader {
+	background: #384047 url(/img/darkPattern.png) 0 -300px repeat;
+	margin-top: -20px;
+	padding-bottom: 89px;
+}
+
+.pricesPage .header h2 {
+	color:white;
+	font-size: 46px;
+}
+
+.pricesPage .header h2 small{
+	color:white;
+	display: block;
+	font-size: 20px;
+	font-weight: 400;
+	letter-spacing: -0.02em;
+	margin-bottom: 22px;
+	line-height: 0;
+}
+
+.overlap {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+.plans-container {
+	margin: 0 auto;
+	width: 1000px;
+	margin-top:-89px;
+	max-width: 100%;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	-ms-border-radius: 8px;
+	-o-border-radius: 8px;
+	border-radius: 8px;
+	-webkit-box-shadow: 0 2px 0 #e8e8e8;
+	-moz-box-shadow: 0 2px 0 #e8e8e8;
+	box-shadow: 0 2px 0 #e8e8e8;
+}
+
+.plans-container, .signup-form, #stories .secondary-content {
+	background: #eff2f3;
+	background-size: 100% 8px;
+	padding-top: 8px;
+}
+
+.plans-content {
+	background: #fff;
+	padding-bottom: 100px;
+}
+
+.plans-container .row {
+	border-bottom: 1px solid rgba(255,255,255,0.07);
+	color: #fff;
+}
+
+.plans-container .row {
+	border-bottom: none !important;
+	margin-left:0;
+	margin-right:0;
+}
+
+.plans-container ul, .plans-container ol {
+	margin:0;
+	padding:0;
+}
+
+.silver-column {
+	border-left: solid 1px #e3e3e3;
+	text-align: center;
+	background-color: #f3f6f7;
+	list-style:none;
+}
+
+.gold-column {
+	border-left: solid 1px #e3e3e3;
+	text-align: center;
+	background-color: #f6f9fa;
+	list-style: none;
+}
+
+.plan-row {
+	border-bottom: solid 1px #e3e3e3;
+	color: #8d9aa5;
+	font-size: 16px;
+	font-family: "Gotham Rounded A","Gotham Rounded B",Helvetica,Arial,sans-serif;
+	padding: 15px 0;
+	vertical-align: middle;
+}
+
+.plan-title {
+	font-size: 26px;
+	color: #384047;
+	font-family: "Gotham Rounded A","Gotham Rounded B",Helvetica,Arial,sans-serif;
+	font-weight: 500;
+	line-height: 80px;
+	margin: 0;
+	padding: 0;
+	height: auto;
+}
+
+.icon-circle {
+	background-color: #64ce83;
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	-webkit-border-radius: 1000px;
+	-moz-border-radius: 1000px;
+	-ms-border-radius: 1000px;
+	-o-border-radius: 1000px;
+	border-radius: 1000px;
+	position: relative;
+	top: 2px;
+}
+
+.annual-price {
+	font-weight: 700;
+}
+
+.monthly-price {
+	font-size: 32px;
+	color: #384047;
+	font-weight: 500;
+}
+
+.plan-row:last-of-type {
+	border-bottom: none;
+}
+
+.cta {
+	padding-right: 15px;
+	padding-left: 15px;
+	padding-bottom: 15px;
+}
+
+.btn-sign {
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+.feature-column {
+	text-align: right;
+	list-style: none;
+}
+
+.feature-column .plan-row {
+	padding-right: 30px;
+}
+
+.features-title {
+	text-align: right;
+	width: 100%;
+	vertical-align: bottom;
+	font-size: 16px;
+	font-family: "Gotham Rounded A","Gotham Rounded B",Helvetica,Arial,sans-serif;
+	font-weight: bold;
+	line-height: 80px;
+	height: auto;
+	color: #8d9aa5;
+	/*padding-right: 30px;*/
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+.monthly {
+	color: #384047;
+	font-size: 16px;
+	padding-top: 31px;
+	padding-bottom: 30px;
+}
+
+.contact-alternate {
+	font-size: 14px;
+	margin-top: 0px;
+	color: #b7c0c7;
+}
+
+/**
+ * FAQS
+ */
+.faq-header {
+	background-color: #f6f9fa;
+	margin-bottom: 0;
+	padding-bottom:50px;
+}
+
+.faq-header h3 {
+	padding-bottom: 35px;
+	padding-top: 50px;
+	font-size: 30px;
+	margin-bottom: 15px;
+	color: #384047;
+
+}
+
+.text-centered {
+	text-align: center;
+}
+
+.faq-text {
+	background-color: #fff;
+	border-left: none;
+	color: rgba(85,94,106,0.8);
+	font-size: 16px;
+	font-style: italic;
+	line-height: 27px;
+	margin-bottom: 30px;
+	padding: 26px;
+	position: relative;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-box-shadow: 0 3px 0 #e5eef1;
+	-moz-box-shadow: 0 3px 0 #e5eef1;
+	box-shadow: 0 3px 0 #e5eef1;
+	font-style: normal !important;
+	font-size: 16px !important;
+}
+
+p:not(.subheading) {
+	font-family: "Gotham Rounded A","Gotham Rounded B",Helvetica,Arial,sans-serif !important;
+	font-size: 16px;
+	color: #8c989e !important;
+	line-height: 26px;
+}
+
+.faq-text strong {
+	display: block;
+	margin-bottom: 10px;
+}
+
+
+
+
