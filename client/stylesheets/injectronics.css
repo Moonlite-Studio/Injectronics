@@ -185,7 +185,7 @@ html,body{
 }
 
 .header-content h1 {
-	color: #fff;
+	color: #666;
 	display:block;
 	margin-top:0;
 	font-size: 54px;
@@ -193,7 +193,7 @@ html,body{
 }
 
 .header-content h1 small {
-	color: #fff;
+	color: #666;
 	margin-left: 3px;
 	font-size: 26px;
 	letter-spacing : -0.02em;
@@ -204,7 +204,7 @@ html,body{
 .header-content h1+.subheading {
 	font-size: 22px;
 	margin-bottom: 55px;
-	color: rgba(255,255,255,0.6);
+	color: rgba(30,30,30,0.6);
 	padding-right: 160px;
 	font-family: "Gotham Rounded A", "Gotham Rounded B", Helvetica;
 }
@@ -240,7 +240,7 @@ html,body{
 
  .splash-header{
  	background-color: #0a0705;
-	background-image: url(/img/car.jpg);
+	background-image: url(/img/mustang.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: top center;
