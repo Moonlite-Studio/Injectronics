@@ -10,16 +10,19 @@ Lead Analyst and Designer-> Adam Fainman
 
 
 TO DOWNLOAD:
-
-git clone https://github.com/Moonlite-Studio/Injectronics.git
-cd Injectronics
-git checkout origin/development
-git branch myName-development
-git checkout myName-development
-mrt add router
-meteor
+<ol>
+<li>git clone https://github.com/Moonlite-Studio/Injectronics.</li>
+<li>cd Injectronics</li>
+<li>git checkout origin/development</li>
+<li>git branch myName-development</li>
+<li>git checkout myName-development</li>
+<li>mrt add router</li>
+<li>meteor</li>
+</ol>
 
 TO PUSH
-git add -A
-git commit -m "Message"
-git push origin myName-development
+<ol>
+<li>git add -A</li>
+<li>git commit -m "Message"</li>
+<li>git push origin myName-development</li>
+</ol>
