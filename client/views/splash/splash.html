@@ -17,23 +17,35 @@
 
 								<button class="btn btn-lg btn-primary signin" data-toggle="modal" href="#myModal">Sign In</button>
 
-								<button class="btn btn-lg btn-success signin">Learn More</button>
+								<button id="learnMore" class="btn btn-lg btn-success signin">Learn More</button>
 							</div>
 						</div>
 					</div>
 				</div>
-				
 
-
+				{{> signInModal}}
 				<div class="splash-content">
 					<div class="container">
 					<!--Featurette -->
+
+					<div class="row featurette">
+						<div class="col-sm-5 col-sm-push-7">
+							<img class="featurette-image img-responsive" src="img/featurette.png" alt="500x500">
+						</div>
+						<div class="col-sm-7 col-sm-pull-5">
+							<h2 class="featurette-heading">Browse our Courses. <span class="text-muted">Find your passion.</span></h2>
+							<p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+						</div>
+
+					</div>
+
+					<hr class="featurette-divider">
 					<div class="row featurette">
 						<div class="col-sm-5">
 							<img class="featurette-image img-responsive" src="img/featurette.png" alt="500x500">
 						</div>
 						<div class="col-sm-7">
-							<h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
+							<h2 class="featurette-heading">Online Training <span class="text-muted">Anywhere, anytime.</span></h2>
 							<p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
 						</div>
 
@@ -47,24 +59,13 @@
 							<img class="featurette-image img-responsive" src="img/featurette.png" alt="500x500">
 						</div>
 						<div class="col-sm-7 col-sm-pull-5">
-							<h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
+							<h2 class="featurette-heading">Classroom Training <span class="text-muted">See for yourself.</span></h2>
 							<p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
 						</div>
 					</div>
 
 					<hr class="featurette-divider">
-					<div class="row featurette">
-						<div class="col-sm-5">
-							<img class="featurette-image img-responsive" src="img/featurette.png" alt="500x500">
-						</div>
-						<div class="col-sm-7">
-							<h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-							<p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-						</div>
-
-					</div>
-
-					<hr class="featurette-divider">
+					
 
 				
 
