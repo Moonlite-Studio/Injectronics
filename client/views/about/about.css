@@ -49,8 +49,7 @@
 
 /*This is for the form placement*/
 
-.aboutPage .contained{
-  padding:30px 15px;
+.aboutPage .container{
   position:relative;
 }
 
@@ -128,7 +127,7 @@
       margin: 0; }
   #team .people {
     margin: 0; }
-    #team .people .row1 {
+    #team .people .row1 .row {
       margin: 0 0 50px 0; }
     #team .people .bio_box {
       margin: 0; }
@@ -194,7 +193,7 @@
   margin-top: -20px;
 }
   #process .section_header {
-    margin-bottom: 60px; }
+    margin-bottom: 50px 60px; }
     #process .section_header h3 {
       margin: 0; }
   #process .description {
