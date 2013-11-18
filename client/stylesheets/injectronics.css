@@ -23,6 +23,10 @@ html,body{
 	background-color:transparent!important;
 }
 
+.main-content {
+	margin-left: 0px;
+}
+
 .breadcrumbs {
 	border: 1px solid transparent;
 	border-radius: 4px;
@@ -339,7 +343,7 @@ li.browse-file, li.browse-new-folder {
 
  @media (min-width: 992px){
  	.splash{
- 		margin-left:-190px;
+/* 		margin-left:-190px;*/
 
  	}
 
