@@ -7,6 +7,94 @@
 #aboutus .row {
   margin:0;
 }
+
+/*This is the background area of the header*/
+.aboutPage {
+  margin-left: -190px;
+}
+
+.aboutPage .header {
+  margin-top:100px;
+
+}
+
+.about {
+  margin-top:20px;
+}
+
+
+.aboutPage .fullHeader {
+  background: #384047 url(/img/darkPattern.png) 0 -300px;  /*This is the red background*/
+  margin-top: -20px;
+  padding-bottom: 89px;
+}
+
+.aboutPage .header h2 {   /*This is the form part that goes up into the header*/
+  color:white;
+  font-size: 46px;
+}
+
+.aboutPage .header h2 small{
+  color:white;
+  display: block;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  margin-bottom: 22px;
+  line-height: 0;           /*This is the end of the overalp part*/
+}
+
+/*Header area ends here*/
+
+/*This is for the form placement*/
+
+.aboutPage .contained{
+  background: #fff;
+  padding:30px 15px;
+  position:relative;
+  webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 1px 0 0 rgba(0,0,0,0.1);
+  -moz-box-shadow: 0 1px 0 0 rgba(0,0,0,0.1);
+  box-shadow: 0 1px 0 0 rgba(0,0,0,0.1);
+}
+
+.aboutPage .plans-container {
+  margin: 0 auto;
+  width: 1000px;
+  margin-top:-89px;
+  max-width: 100%;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 2px 0 #e8e8e8;
+  -moz-box-shadow: 0 2px 0 #e8e8e8;
+  box-shadow: 0 2px 0 #e8e8e8;
+}
+/*.aboutPage .plans-container {
+  margin: 0 auto;
+  width: 1000px;
+  margin-top:-89px;
+  max-width: 100%;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 2px 0 #e8e8e8;
+  -moz-box-shadow: 0 2px 0 #e8e8e8;
+  box-shadow: 0 2px 0 #e8e8e8;
+}*/
+
+
+/*Form placement ends here*/
+
+
   #aboutus .intro h6 {
     font-size: 21px;
     font-style: italic;
@@ -112,6 +200,7 @@
   min-height: 350px; 
   padding-bottom: 100px;
   padding-top:50px;
+  margin-top: -20px;
 }
   #process .section_header {
     margin-bottom: 60px; }
