@@ -1,6 +1,7 @@
 #aboutus {
-  margin-bottom: 90px;
-  margin-top: 70px; 
+  background: #f7f7f7;
+  padding-top: 70px;
+  padding-bottom:70px;
 }
 
 #aboutus .row {
@@ -36,7 +37,7 @@
 #team {
   padding: 35px 0 25px;
   margin: 0;
-  background: #f7f7f7;
+
   margin-bottom: 90px;
   border-top: 1px solid #eee;
   border-bottom: 1px solid #eee; }
@@ -110,6 +111,7 @@
 #process {
   min-height: 350px; 
   padding-bottom: 100px;
+  padding-top:50px;
 }
   #process .section_header {
     margin-bottom: 60px; }
