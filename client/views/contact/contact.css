@@ -27,6 +27,11 @@
 	clear:both;
 }
 
+.contact_info .secondary-heading h3 {
+	margin-top: 0px;
+	
+}
+
 .contained .secondary-heading h1{
 	color:#384047;
 	font-size: 1.8em;
