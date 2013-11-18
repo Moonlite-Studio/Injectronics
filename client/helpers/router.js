@@ -1,15 +1,35 @@
 Meteor.Router.add({
 
 	//Routes to dashboard Page.
-	'/': "dashboard",
+	'/': {
+		to: "dashboard",
+		and: function() {Meteor.setTimeout(function(){
+			window.scrollTo(0,0);},1);}
+	},
 
-	'/projects' : 'projectsList',
+	'/projects' : {
+		to: "projectsList",
+		and: function() {Meteor.setTimeout(function(){
+			window.scrollTo(0,0);},1);}
+	},
 
-	'/about' : 'about',
+	'/about' : {
+		to: "about",
+		and: function() {Meteor.setTimeout(function(){
+			window.scrollTo(0,0);},1);}
+	},
 
-	'/contactus' : 'contactUs',
+	'/contactus' : {
+		to: "contactUs",
+		and: function() {Meteor.setTimeout(function(){
+			window.scrollTo(0,0);},1);}
+	},
 
-	'/prices' : 'prices',
+	'/prices' : {
+		to: "prices",
+		and: function() {Meteor.setTimeout(function(){
+			window.scrollTo(0,0);},1);}
+	},
 	
 	//Routes to individual project pages
 	'/projects/:_id' : {
@@ -18,14 +38,30 @@ Meteor.Router.add({
 	},
 
 	//Routes to the Submit page, no args
-	'/submit': 'projectCreate',
+	'/submit': {
+		to: "projectCreate",
+		and: function() {Meteor.setTimeout(function(){
+			window.scrollTo(0,0);},1);}
+	},
 
 	//This page is used for debuging and testing.  Delete before release
-	'/debug': 'debugEntries',
+	'/debug': {
+		to: "about",
+		and: function() {Meteor.setTimeout(function(){
+			window.scrollTo(0,0);},1);}
+	},
 
-	'/accountManagement' : 'accountManagement',
+	'/accountManagement' : {
+		to: "accountManagement",
+		and: function() {Meteor.setTimeout(function(){
+			window.scrollTo(0,0);},1);}
+	},
 
-	'/admin' : 'admin'
+	'/admin' : {
+		to: "admin",
+		and: function() {Meteor.setTimeout(function(){
+			window.scrollTo(0,0);},1);}
+	},
 
 
 });
