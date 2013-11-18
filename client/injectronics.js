@@ -1,4 +1,5 @@
 Template.injectronics.rendered = function () {
+    $('body').removeAttr('style');
 	jqueryui();
   metroNotifications();
 

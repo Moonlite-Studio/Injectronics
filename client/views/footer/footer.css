@@ -149,7 +149,8 @@
       height: 36px; }
   #footer .info {
     margin-bottom: 10px;
-    margin-left: 0; }
+    margin-left: 0; 
+    text-align:center;}
     #footer .info .residence {
       margin-left: 0; }
     #footer .info ul {

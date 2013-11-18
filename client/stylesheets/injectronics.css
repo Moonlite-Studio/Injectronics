@@ -16,6 +16,7 @@ html,body{
 .main-container{
 	background-color:rgba(230,230,230,.6)!important;
 	height:100%;
+	overflow:hidden!important;
 }
 
 .main-container:after {
