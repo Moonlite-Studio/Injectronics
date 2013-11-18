@@ -10,7 +10,7 @@ Template.splash.events({
 //Hides the dimmed effect
 Template.splash.rendered = function () {
 	theme();
-	skrollr();
+	skrolling();
 	skrollr.init();
 
 	$('#effect').hide();
