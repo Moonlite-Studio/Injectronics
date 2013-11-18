@@ -20,6 +20,12 @@ TO DOWNLOAD:
 <li>meteor</li>
 </ol>
 
+TO ADD AND COMMIT
+<ol>
+<li> git add -A </li>
+<li> git commit -m "My Message"</li>
+</ol>
+
 TO PUSH
 <ol>
 <li>git add -A</li>
