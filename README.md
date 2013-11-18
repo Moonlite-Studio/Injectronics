@@ -18,6 +18,7 @@ TO DOWNLOAD:
 <li>git checkout myName-development</li>
 <li>mrt add router</li>
 <li>meteor</li>
+<li>open localhost:3000 on browser</li>
 </ol>
 
 TO ADD AND COMMIT
