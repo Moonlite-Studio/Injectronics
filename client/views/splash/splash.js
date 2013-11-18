@@ -46,7 +46,6 @@ Template.splash.rendered = function () {
 				position: "fixed",
 				top: "0px"
 			});
-			s.addClass("sticky");
 			content.addClass("pastNav");
 			s.removeClass("beforeNav");
 		} else {
@@ -55,7 +54,6 @@ Template.splash.rendered = function () {
 					position: "relative",
 					top: ""
 				});
-				s.addClass("sticky");
 				content.removeClass('pastNav');
 				s.addClass("beforeNav");
 			}
