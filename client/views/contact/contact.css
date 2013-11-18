@@ -4,7 +4,7 @@
 
 .contactUs {
 	margin-bottom: 90px;
-  	margin-top: 70px; 
+  	margin-top: 20px; 
 }
 
 .contained{
@@ -33,6 +33,63 @@
 	font-weight:bold;
 	line-height:1.2;
 }
+
+/*This is the background area of the header*/
+.contactUsPage {
+	margin-left: -190px;
+}
+
+.contactUsPage .header {
+	margin-top:100px;
+
+}
+
+
+.contactUsPage .fullHeader {
+	background: #384047 url(/img/redheader3.png) 0 -300px;  /*This is the red background*/
+	margin-top: -20px;
+	padding-bottom: 89px;
+}
+
+.contactUsPage .header h2 {   /*This is the form part that goes up into the header*/
+	color:white;
+	font-size: 46px;
+}
+
+.contactUsPage .header h2 small{
+	color:white;
+	display: block;
+	font-size: 20px;
+	font-weight: 400;
+	letter-spacing: -0.02em;
+	margin-bottom: 22px;
+	line-height: 0;           /*This is the end of the overalp part*/
+}
+
+/*Header area ends here*/
+
+
+/*This is for the form placement*/
+
+
+.contactUsPage .plans-container {
+	margin: 0 auto;
+	width: 1000px;
+	margin-top:-89px;
+	max-width: 100%;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	-ms-border-radius: 8px;
+	-o-border-radius: 8px;
+	border-radius: 8px;
+	-webkit-box-shadow: 0 2px 0 #e8e8e8;
+	-moz-box-shadow: 0 2px 0 #e8e8e8;
+	box-shadow: 0 2px 0 #e8e8e8;
+}
+
+/*Form placement ends here*/
+
+/*Form specific below*/
 
 .form-item {
 	position: relative;
