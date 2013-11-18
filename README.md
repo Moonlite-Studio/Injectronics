@@ -33,3 +33,8 @@ TO PUSH
 <li>git commit -m "Message"</li>
 <li>git push origin myName-development</li>
 </ol>
+To Pull latest version
+<ol>
+<li>git pull origin development</li>
+<li>mrt add router (if neccessary)</li>
+</ol>
