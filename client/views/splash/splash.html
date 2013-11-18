@@ -3,12 +3,12 @@
 		<div class = 'splash'>
 
 
-			<div class = "row">
-				<div class="splash-header">
-					{{>staticHeader}}
+			<div class = "row" >
+				<div class="splash-header" data-0="background-position:0px 0px;" data-500="background-position:0px -250px;">
+					
 					<div class = "row">
 						<div class="col-xs-12 col-sm-9 col-md-5">
-							<div class="header-content">
+							<div class="header-content" data-0="opacity: 1" data-180="opacity: 0">
 								<h1>
 									<small>A new way to learn</small>
 									<br>Technical Training
@@ -22,55 +22,55 @@
 						</div>
 					</div>
 				</div>
-
+				{{>staticHeader}}
 				{{> signInModal}}
-				<div class="splash-content">
+				<div class="splash-content" id="splash-content">
 					<div class="container">
-					<!--Featurette -->
+						<!--Featurette -->
 
-					<div class="row featurette">
-						<div class="col-sm-5 col-sm-push-7">
-							<img class="featurette-image img-responsive" src="img/featurette.png" alt="500x500">
+						<div class="row featurette">
+							<div class="col-sm-5 col-sm-push-7">
+								<img class="featurette-image img-responsive" src="img/featurette.png" alt="500x500">
+							</div>
+							<div class="col-sm-7 col-sm-pull-5">
+								<h2 class="featurette-heading">Browse our Courses. <span class="text-muted">Find your passion.</span></h2>
+								<p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+							</div>
+
 						</div>
-						<div class="col-sm-7 col-sm-pull-5">
-							<h2 class="featurette-heading">Browse our Courses. <span class="text-muted">Find your passion.</span></h2>
-							<p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+
+						<hr class="featurette-divider">
+						<div class="row featurette">
+							<div class="col-sm-5">
+								<img class="featurette-image img-responsive" src="img/featurette.png" alt="500x500">
+							</div>
+							<div class="col-sm-7">
+								<h2 class="featurette-heading">Online Training <span class="text-muted">Anywhere, anytime.</span></h2>
+								<p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+							</div>
+
 						</div>
+
+						<hr class="featurette-divider">
+
+						<!--Featurette -->
+						<div class="row featurette">
+							<div class="col-sm-5 col-sm-push-7">
+								<img class="featurette-image img-responsive" src="img/featurette.png" alt="500x500">
+							</div>
+							<div class="col-sm-7 col-sm-pull-5">
+								<h2 class="featurette-heading">Classroom Training <span class="text-muted">See for yourself.</span></h2>
+								<p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+							</div>
+						</div>
+
+						<hr class="featurette-divider">
+
+
+
 
 					</div>
-
-					<hr class="featurette-divider">
-					<div class="row featurette">
-						<div class="col-sm-5">
-							<img class="featurette-image img-responsive" src="img/featurette.png" alt="500x500">
-						</div>
-						<div class="col-sm-7">
-							<h2 class="featurette-heading">Online Training <span class="text-muted">Anywhere, anytime.</span></h2>
-							<p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-						</div>
-
-					</div>
-
-					<hr class="featurette-divider">
-
-					<!--Featurette -->
-					<div class="row featurette">
-						<div class="col-sm-5 col-sm-push-7">
-							<img class="featurette-image img-responsive" src="img/featurette.png" alt="500x500">
-						</div>
-						<div class="col-sm-7 col-sm-pull-5">
-							<h2 class="featurette-heading">Classroom Training <span class="text-muted">See for yourself.</span></h2>
-							<p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-						</div>
-					</div>
-
-					<hr class="featurette-divider">
-					
-
-				
-
 				</div>
-			</div>
 			</div>
 
 			{{> footer}}

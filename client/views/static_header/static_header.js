@@ -11,7 +11,7 @@ Handlebars.registerHelper('active', function(path) {
 Template.staticHeader.helpers({
 	navtype: function() {
 		if(Meteor.Router.page() === 'splash'){
-			return 'navbar-fixed-top';
+			return '';
 		}
 		else{
 			return 'navbar-static-top';
