@@ -11,6 +11,7 @@
 /*This is the background area of the header*/
 .aboutPage {
   margin-left: -190px;
+  background: #f6f9fa;
 }
 
 .aboutPage .header {
@@ -49,17 +50,8 @@
 /*This is for the form placement*/
 
 .aboutPage .contained{
-  background: #fff;
   padding:30px 15px;
   position:relative;
-  webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
-  border-radius: 5px;
-  -webkit-box-shadow: 0 1px 0 0 rgba(0,0,0,0.1);
-  -moz-box-shadow: 0 1px 0 0 rgba(0,0,0,0.1);
-  box-shadow: 0 1px 0 0 rgba(0,0,0,0.1);
 }
 
 .aboutPage .plans-container {
@@ -125,10 +117,9 @@
 #team {
   padding: 35px 0 25px;
   margin: 0;
-
+  background: #fff;
   margin-bottom: 90px;
-  border-top: 1px solid #eee;
-  border-bottom: 1px solid #eee; }
+}
   #team .section_header {
     margin-bottom: 60px; }
     #team .section_header h3 {
