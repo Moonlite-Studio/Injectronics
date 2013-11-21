@@ -71,6 +71,10 @@ Template.signInModal.events({
 	'click #signUpButton': function (event) {
 		//This will stop the default submitting of the form
 		event.preventDefault();
+		console.log("Email : " + $('#sign-email').val());
+		console.log("Password : " + $('#sign-password').val());
+		console.log("firstname : " + $('#sign-first-name').val());
+		console.log("lastname : " + $('#sign-last-name').val());
 		var time = new Date().getTime();
 		var options = {
 			email : $('#sign-email').val(),
@@ -79,7 +83,7 @@ Template.signInModal.events({
 			//be freely edited by the user
 			profile : {
 				name : ($('#sign-first-name').val() + " " + $('#sign-last-name').val()),
-				templateCode : $('#sign-template-code').val(),
+				templateCode : '545',
 				joinDate: time,
 				recent: {
 					lastLogin: time,
@@ -98,6 +102,13 @@ Template.signInModal.events({
 				}
 			}
 		};
+
+		Accounts.createUser(options, function () {
+			var entry = {};
+			//Calls the newly created User's function to create
+			//an ectry for the user
+			//Meteor.user()
+		});
 	}
 });
 

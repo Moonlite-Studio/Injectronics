@@ -24,34 +24,6 @@
 
  }
 
- .splash-nav {
- 	text-transform: uppercase;
- 	font-family: "Gotham SSmA", "Gotham SSmB", Helvetica, Arial;
- 	height: 38px;
- 	font-size: 14px;
- 	line-height: 1.6;
- 	list-style-position: outside;
- 	direction: ltr;
- 	margin: 15px 16px;
- 	padding: 0 15px;
- }
-
-
-
- .splash-nav li a {
- 	font-size:12px;
- 	color: #fff!important;
- 	font-family: "Gotham SSmA", "Gotham SSmB", Helvetica;
- 	font-weight: bold;
- 	text-decoration: none;
- 	vertical-align: middle;
- }
-
- .splash-nav > li > a:hover, .nav-callout {
- 	background-color:rgba(0,0,0,0.3)!important;
- }
-
-
  .logo {
  	margin: 0 auto;
  	text-align: center;
